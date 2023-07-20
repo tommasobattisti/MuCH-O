@@ -1,0 +1,1213 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#"
+     xml:base="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl">
+        <ns:license xml:lang="en">https://creativecommons.org/licenses/by-sa/4.0/</ns:license>
+        <dc:creator xml:lang="en">Tommaso Battisti</dc:creator>
+        <dc:description xml:lang="en">The MuCH-Ontology is a semantic model to describe different relations connecting together music entities such as songs and albums and other entities in the realm of Cultural Heritage.
+The MuCH-Ontology reuses Polifonia&apos;s Music Meta Ontology for music entities and music artists descriptions and extends the reach of the Prov Ontology&apos;s qualified influences in order to capture more specific relationships between Cultural Heritage entities.</dc:description>
+        <dc:license xml:lang="en">https://creativecommons.org/licenses/by-sa/4.0/</dc:license>
+        <dc:title xml:lang="en">MuCH-Ontology</dc:title>
+        <rdfs:comment xml:lang="en">The MuCH-Ontology is a semantic model to describe different relations connecting together music entities such as songs and albums and other entities in the realm of Cultural Heritage.
+The MuCH-Ontology reuses Polifonia&apos;s Music Meta Ontology for music entities and music artists descriptions and extends the reach of the Prov Ontology&apos;s qualified influences in order to capture more specific relationships between Cultural Heritage entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">MuCH-Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#constraints -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#constraints"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#dm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#editorsDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#editorsDefinition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#inverse -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#n -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedForm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#qualifiedForm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#unqualifiedForm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#unqualifiedForm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#entity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#entity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influencer"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label>entity</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:editorialNote xml:lang="en">This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.</prov:editorialNote>
+        <prov:editorsDefinition xml:lang="en">The prov:entity property references an prov:Entity which influenced a resource. This property applies to an prov:EntityInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent.</prov:editorsDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influenced -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influenced">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>influenced</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:inverse>wasInfluencedBy</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influencer -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influencer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment>Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used.</rdfs:comment>
+        <rdfs:label>influencer</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:dm>http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+        <prov:editorialNote>This property and its subproperties are used in the same way as the rdf:object property, i.e. to reference the object of an unqualified prov:wasInfluencedBy or prov:influenced triple.</prov:editorialNote>
+        <prov:editorsDefinition>This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified.</prov:editorsDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedDerivation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedDerivation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:comment xml:lang="en">If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>qualifiedDerivation</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:inverse>qualifiedDerivationOf</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedInfluence -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInfluence">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:comment xml:lang="en">Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>qualifiedInfluence</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:inverse>qualifiedInfluenceOf</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedDerivation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#entity"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">The more specific subproperties of prov:wasDerivedFrom should be used when applicable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasDerivedFrom</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:definition xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</prov:definition>
+        <prov:inverse>hadDerivation</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedDerivation"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:comment>Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">Because prov:wasInfluencedBy is a broad relation, its more specific subproperties should be used when applicable.</rdfs:comment>
+        <rdfs:comment>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href=&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasInfluencedBy</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:editorialNote xml:lang="en">The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .
+
+Subproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.
+
+prov:wasInfluencedBy should not be used without also using one of its subproperties. 
+</prov:editorialNote>
+        <prov:inverse>influenced</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#alludesTo -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#alludesTo">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label xml:lang="en">alludesTo</rdfs:label>
+        <prov:category xml:lang="en">expanded</prov:category>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAllusion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#cites -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#cites">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label xml:lang="en">cites</rdfs:label>
+        <prov:category xml:lang="en">expanded</prov:category>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedCitation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAuthor">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAuthorOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:comment xml:lang="en">Specifies the authoriality of an Agent over the involved entity (InformationObject).</rdfs:comment>
+        <rdfs:label xml:lang="en">Has author</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAdaptationOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAdaptationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label xml:lang="en">isAdaptationOf</rdfs:label>
+        <prov:category xml:lang="en">expanded</prov:category>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAdaptation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAuthorOf">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">Inverse property of hasAutor. Specifies the entity (InformationObject) the invoved Agent has authoriality over.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is author of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isBasedOn -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isBasedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label xml:lang="en">isBasedOn</rdfs:label>
+        <prov:category xml:lang="en">expanded</prov:category>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedBasis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#mentions -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#mentions">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label xml:lang="en">mentions</rdfs:label>
+        <prov:category xml:lang="en">expanded</prov:category>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedMention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAdaptation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAdaptation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation"/>
+        <rdfs:comment xml:lang="en">If this Entity isAdaptationOf Entity :e, then it can qualify how it was adapted using qualifiedAdaptation [ a prov:Adaptation;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifiedAdaptation</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAdaptationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAllusion -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAllusion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion"/>
+        <rdfs:comment xml:lang="en">If this Entity alludesTo Entity :e, then it can qualify how it alludes to using qualifiedAllusion [ a prov:Allusion;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#alludesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedBasis -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedBasis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis"/>
+        <rdfs:comment xml:lang="en">If this Entity isbasedOn Entity :e, then it can qualify how it was based on using qualifiedBasis [ a prov:Basis;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifiedBasis</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isBasedOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedCitation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedCitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation"/>
+        <rdfs:comment xml:lang="en">If this Entity cites Entity :e, then it can qualify how it cites using qualifiedCitation [ a prov:Citation;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifiedCitation</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#cites"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedInspiration -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedInspiration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration"/>
+        <rdfs:comment xml:lang="en">If this Entity wasInspiredBy Entity :e, then it can qualify how it was inspired using qualifiedInpiration [ a prov:Inspiration;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifiedInspiration</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#wasInspiredBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedMention -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedMention">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention"/>
+        <rdfs:comment xml:lang="en">If this Entity mentions Entity :e, then it can qualify how it mentions using qualifiedMention [ a prov:Mention;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifiedMention</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#mentions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedReference -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedReference">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference"/>
+        <rdfs:comment xml:lang="en">If this Entity references Entity :e, then it can qualify how it references using qualifiedReference [ a prov:Reference;  prov:entity :e; :foo :bar ].</rdfs:comment>
+        <rdfs:label xml:lang="en">qualifiedReference</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:sharesDefinitionWith rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference"/>
+        <prov:unqualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">The more specific subproperties of references should be used when applicable.</rdfs:comment>
+        <rdfs:label xml:lang="en">references</rdfs:label>
+        <prov:definition xml:lang="en">A reference is any kind of direct or indirect mention, allusion, or citation to some external entity with respect to the referencing one.</prov:definition>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#wasInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#wasInspiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:label xml:lang="en">wasinspiredBy</rdfs:label>
+        <prov:definition xml:lang="en">An inspiration is the process of being stimulated by some existent entity to do, produce, or create some new entity. It consists getting from something  a new or creative idea that can be applied in the creation of something new.</prov:definition>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration"/>
+        <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedInspiration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/hasMember">
+        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/core/isMemberOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Musician"/>
+        <rdfs:comment xml:lang="en">The relation between a collection and a member of it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/hasPart">
+        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/core/isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+        <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities, e.g. &apos;the human body has a brain as part&apos;. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see &apos;componency&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/isMemberOf">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Musician"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble"/>
+        <rdfs:comment xml:lang="en">The relation between an entity and a collection that the entity is member of.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities, e.g. &apos;brain is a part of the human body&apos;. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see &apos;componency&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl"/>
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/hasGenre -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/hasGenre">
+        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isGenreOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
+        <rdfs:comment xml:lang="en">Specifies the genre or genres associated with a MusicArtist. This property represents the relationship between a MusicArtist and the MusicGenre(s) that are attributed or associated with their artistic output or musical style. It indicates the genre(s) that best describe the musical genre(s) or genres in which the MusicArtist operates or specializes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has genre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/hasPart"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:comment xml:lang="en">Specifies the relationship between a MusicEntity and its constituent parts or components. This property represents the connection between a MusicEntity and the individual parts or components that comprise it. It indicates that the MusicEntity is composed of or includes the mentioned parts, which may consist of specific sections, movements, instrumental or vocal parts, or other structural elements that contribute to the overall composition.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has music entity part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/hasSource -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/hasSource">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:label xml:lang="en">Has source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/hasTextFragment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/hasTextFragment">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/hasPart"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isTextFragmentOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+        <rdfs:comment xml:lang="en">Specifies that a Text has a TextFragment associated with it. This property represents the relationship between a Text, such as lyrics or written text, and its corresponding TextFragment. It indicates that the Text contains or includes the mentioned TextFragment, which represents a portion or segment of the overall Text.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has text part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/isGenreOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/isGenreOf">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of &quot;hasGenre.&quot; It specifies that a MusicGenre is attributed or associated with a MusicArtist.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is genre of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/isPartOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of &quot;hasMusicEntityPart.&quot; It indicates that a MusicEntity part or component is part of a specific MusicEntity. This property establishes the connection from the MusicEntity part&apos;s perspective, indicating its inclusion or membership within the larger MusicEntity. The inverse property &quot;isPartOfMusicEntity&quot; allows for the modeling and description of the hierarchical or structural relationships between MusicEntity parts and the MusicEntities they belong to.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is part of music entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/isTextFragmentOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-meta/isTextFragmentOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/isPartOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of &quot;hasTextFragment.&quot; It indicates that a TextFragment is associated with a specific Text. This property establishes the connection from the TextFragment&apos;s perspective, indicating that it is a fragment or segment of the larger Text.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is text fragment of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#annotation -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#annotation">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Specifies the annotations reated to a specifc Text or TextFragment.</rdfs:comment>
+        <rdfs:label xml:lang="en">annotation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Specifies additional infromation about a qualified influence.</rdfs:comment>
+        <rdfs:label xml:lang="en">influence information</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformationSource -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformationSource">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">Specifies the source of the information about the qualified influence between the involved entities</rdfs:comment>
+        <rdfs:label xml:lang="en">influence information source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceSourceText -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceSourceText">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Specifies the source text in which the qualified influence can be found.</rdfs:comment>
+        <rdfs:label xml:lang="en">influence source text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/name -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/polifonia/ontology/core/name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/nickname -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/polifonia/ontology/core/nickname">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/text -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/polifonia/ontology/core/text">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/title -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/polifonia/ontology/core/title">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Derivation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Derivation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ].</rdfs:comment>
+        <rdfs:comment xml:lang="en">The more specific forms of prov:Derivation should be asserted if they apply.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Derivation</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Derivation</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#Derivation-Relation</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#EntityInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#EntityInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:comment xml:lang="en">EntityInfluence provides additional descriptions of an Entity&apos;s binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>EntityInfluence</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#entity"/>
+        <prov:category>qualified</prov:category>
+        <prov:editorsDefinition xml:lang="en">EntityInfluence is the capacity of an entity to have an effect on the character, development, or behavior of another by means of usage, start, end, derivation, or other. </prov:editorsDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Influence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Influence">
+        <rdfs:comment xml:lang="en">An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Influence</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>derivations</prov:component>
+        <prov:definition xml:lang="en">Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-influence</prov:n>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:comment xml:lang="en">An instance of Adaptation provides additional descriptions about the binary isAdaptationOf relation from some derived entity to another entity from which it was adapted (typically involving an entity with another medium).
+For example, it can be used for specifying the relation expressing the fact that the film &quot;The Shining&quot; was adapted from the homonymous book.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adaptation</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">An adaptation is the act of adjusting some existent entity in order to make it fit to different conditions, in this case determined by the medium on which it is delivered. The adaptation process ends with the creation of a new entity that has different structural characteristics but still represents the same nucleus of meaning.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference"/>
+        <rdfs:comment xml:lang="en">An instance of Allusion provides additional descriptions about the binary alludesTo relation from some alluding entity to another entity it has been alluded to.</rdfs:comment>
+        <rdfs:label xml:lang="en">Allusion</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">An Allusion is an indirect reference to another entity intended as a resemblance or an indirect call to attention aiming at suggesting a relationship between the alluding entity and the one it has been alluded to.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#AudiovisualEntity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#AudiovisualEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This class represents an Information Object whose production, existence, and fruition needs the processing of both a soud and a visual component (e.g., films, television products, videoclips, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">Audiovisual Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+        <rdfs:comment xml:lang="en">An instance of Basis provides additional descriptions about the binary isBasedOn relation from some derived entity to another entity from which it was based on. It does not necessarily involve the change of medium bewteeen the two entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Basis</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">Being based on something means to have an existent entity acting as the primary source for shaping a new entity maintaining some arbitrary connections between the different levels of significance.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference"/>
+        <rdfs:comment xml:lang="en">An instance of Citation provides additional descriptions about the binary cites relation from some citing entity to another cited entity. It should be intended as a synonym of quotation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Citation</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">A Citation is here intended with its meanong of quotation from an entity to another. It should be intended as an explict reuse of some part of another entity&apos;s content rather than as a general reference to it.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/hasMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/polifonia/ontology/core/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A named group or collective formed by two or more people that act collaboratively towards the achievement of a particular goal (e.g., an art collective aiming at producing art pieces, a band aiming at publishing albums and performing live, etc.).
+Differs from two or more people collaborating without forming a recognised and named group that can identify them as a collective.</rdfs:comment>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of inspiration provides additional descriptions about the binary wasInspiredBy relation between two entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Inspiration</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">An inspiration is the process of being stimulated by some existent entity to do, produce, or create some new entity. It consists getting from something  a new or creative idea that can be applied in the creation of something new.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#LiteraryEntity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#LiteraryEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This class represents an Information Object intended as a written work related to the concept of literature intended as both any collection of written works and as an art form (e.g., novels, poems, letters, diaries, essays, plays, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Literary Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference"/>
+        <rdfs:comment xml:lang="en">An instance of Mention provides additional descriptions about the binary mentions relation from some mentioning entity to another mentioned entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mention</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">A mention is an explicit reference to something (another entity) but without going into detail or reporting part of the mentioned entity&apos;s content.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#MusicAlbum -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#MusicAlbum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Song"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Music Album is a music entity abstracting the concept of a collection of tracks (songs).</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Album</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:comment xml:lang="en">An instance of Reference provides additional descriptions about the binary references relation from some referencing entity to another referenced entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The more specific forms of Reference should be asserted if they apply.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference</rdfs:label>
+        <prov:category xml:lang="en">qualified</prov:category>
+        <prov:definition xml:lang="en">A reference is any kind of direct or indirect mention, allusion, or citation to some external entity with respect to the referencing one.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Song -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Song">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#MusicAlbum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Song abstracts the concept of audio recording representing a music entity intended as a single track which may be part of an album or other kind of collections.</rdfs:comment>
+        <rdfs:label xml:lang="en">Song</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#VisualArtEntity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#VisualArtEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This class represents an Information Object whose production, existence, and fruition is primarily based on visual characteristics (e.g., paintings, photographs, sculptures, etc.).
+Differs from the common definition of visual arts since it does not include audiovisual works.</rdfs:comment>
+        <rdfs:label xml:lang="en">Viausl Art Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/core/Agent">
+        <rdfs:comment xml:lang="en">Any agentive Object, either physical (e.g. a person, a robot), or social (e.g. a corporation, an institution, a community)</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/InformationObject -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/core/InformationObject">
+        <rdfs:comment xml:lang="en">A piece of information, such as a musical composition, a text, a word, a picture, independently from how it is concretely and phisically realized.</rdfs:comment>
+        <rdfs:label xml:lang="en">Information object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/core/Person -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/core/Person">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/Lyrics -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/Lyrics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:comment xml:lang="en">The textual component of a musical composition that consists of the words, verses, or poetic expressions sung or spoken during the performance. Lyrics provide the vocal content and convey the narrative, emotions, or messages expressed through the music. They encompass the written representation of the lyrical content, which may be organized into lines, stanzas, or verses, forming an integral part of the composition.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lyrics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/MusicArtist -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/MusicArtist">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/hasMember"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Musician"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasGenre"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An individual or group involved in creating, performing, or producing music. It encompasses musicians, singers, bands, composers, conductors, producers, and other artistic entities within the music industry.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Artist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:comment xml:lang="en">A group or collective of musicians who perform together as an ensemble. It encompasses various types of musical groups, such as orchestras, bands, choirs, chamber ensembles, and jazz ensembles.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Ensenble</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/MusicEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/MusicEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This class represents an Information Object, which is defined as the sum of all the elements that make up a piece of music. A music entity abstract a musical work, as it may results from a composition process, an improvisation, or be the result of non-written transmission.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/MusicGenre -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/MusicGenre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isGenreOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A specific category or classification of music that shares common characteristics, styles, or cultural origins. It encompasses distinct musical traditions, styles, or movements that define a particular genre.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Genre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/Musician -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/Musician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/Person"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/isMemberOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/isMemberOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An individual who is skilled in playing a musical instrument, singing, or composing music. It encompasses instrumentalists, vocalists, composers, conductors, and other individuals actively engaged in the creation, performance, or production of music.</rdfs:comment>
+        <rdfs:label xml:lang="en">Musician</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/Text -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/Text">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasSource"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasTextFragment"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasTextFragment"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A written or textual component of a musical composition. It encompasses the textual elements, such as lyrics or libretto, that accompany or form part of a musical work.</rdfs:comment>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-meta/TextFragment -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/TextFragment">
+        <rdfs:comment xml:lang="en">A fragment or excerpt of text within a larger textual component of a musical composition. It encapsulates a specific portion of the lyrics, libretto, or other textual elements associated with the music. A TextFragment provides a smaller unit of textual content that can be individually referenced or analyzed within the context of the composition.</rdfs:comment>
+        <rdfs:label xml:lang="en">Text Fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#AudiovisualEntity"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#LiteraryEntity"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#VisualArtEntity"/>
+            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
