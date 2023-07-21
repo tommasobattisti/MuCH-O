@@ -35,8 +35,10 @@ Mention = mucho.Mention
 Text = music_meta.Text
 Lyrics = music_meta.Lyrics
 TextFragment = music_meta.TextFragment
+Annotation = mucho.Annotation
 
 # Object properties
+hasinformationSource = mucho.hasinformationSource
 hasAuthor = mucho.hasAuthor
 isAuthorOf = mucho.isAuthorOf
 hasGenre = music_meta.hasGenre
@@ -71,9 +73,10 @@ alludesTo = mucho.alludesTo
 cites = mucho.cites
 mentions = mucho.mentions
 wasInspiredBy = mucho.wasInspiredBy
+hasAnnotation = mucho.hasAnnotation
+isAnnotationOf = mucho.isAnnotationOf
 
 # Data properties
-annotation = mucho.annotation
 influenceInformation = mucho.influenceInformation
 influenceInformationSource = mucho.influenceInformationSource
 influenceSourceText = mucho.influenceSourceText
