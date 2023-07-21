@@ -1,538 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:ns1="https://w3id.org/polifonia/ontology/music-meta/"
-   xmlns:ns2="https://w3id.org/polifonia/ontology/core/"
+   xmlns:ns1="https://w3id.org/polifonia/ontology/core/"
+   xmlns:ns2="https://w3id.org/polifonia/ontology/music-meta/"
    xmlns:ns3="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <rdf:Description rdf:nodeID="N0d5806a4b05c49d8a5853d96e594a1b1">
+    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
+    <ns1:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
+And are we out of sight?
+Or will our world come tumbling down?
+Will they find our hiding place?
+Is this our last embrace?
+Or will the walls start caving in?
+
+It could be wrong, could be wrong, but it should have been right
+It could be wrong, could be wrong, to let our hearts ignite
+It could be wrong, could be wrong, are we digging a hole?
+It could be wrong, could be wrong, this is out of control
+It could be wrong, could be wrong, it can never last
+It could be wrong, could be wrong, must erase it fast
+It could be wrong, could be wrong, but it could have been right
+It could be wrong, could be...
+
+Love is our resistance
+They'll keep us apart and they won't stop breaking us down
+Hold me
+Our lips must always be sealed
+
+If we live a life in fear
+I'll wait a thousand years
+Just to see you smile again
+Kill your prayers for love and peace
+You'll wake the Thought Police
+We can't hide the truth inside
+You might also like
+It could be wrong, could be wrong, but it should have been right
+It could be wrong, could be wrong, to let our hearts ignite
+It could be wrong, could be wrong, are we digging a hole?
+It could be wrong, could be wrong, this is out of control
+It could be wrong, could be wrong, it can never last
+It could be wrong, could be wrong, must erase it fast
+It could be wrong, could be wrong, but it could have been right
+It could be wrong, could be...
+
+Love is our resistance
+They'll keep us apart and they won't stop breaking us down
+Hold me
+Our lips must always be sealed
+
+The night has reached its end
+We can't pretend
+We must run
+We must run
+It's time to run
+Take us away from here
+Protect us from further harm
+Resistance16Embed</ns1:text>
+  </rdf:Description>
   <rdf:Description rdf:about="https://www.wikidata.org/wiki/Q22151">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEnsemble"/>
-    <ns1:hasGenre rdf:resource="modern rock"/>
-    <ns1:hasGenre rdf:resource="permanent wave"/>
-    <ns1:hasGenre rdf:resource="rock"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#modern rock"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#permanent wave"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#rock"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#m_o_d_e_r_n_ _r_o_c_k"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#p_e_r_m_a_n_e_n_t_ _w_a_v_e"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#r_o_c_k"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#modern_rock"/>
-    <ns1:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#permanent_wave"/>
-    <ns2:name>Muse</ns2:name>
+    <ns1:name>Muse</ns1:name>
     <rdfs:label>Muse</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6f048303d8c0488cb0f407ebf75aa519">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf081d88f896b4d3faf06ee8b4e1b68c6">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nac348e2fa249413f806c99a9bf423f40">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6b17a8d4c5b546679a12482c884ca769">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#m_o_d_e_r_n_ _r_o_c_k">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m_o_d_e_r_n_ _r_o_c_k</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb1df9d96ded746ff929617e4fc6362d8">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4772c8887b9242f1afa78968fd3b5621">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
+    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEnsemble"/>
+    <ns2:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#modern_rock"/>
+    <ns2:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#permanent_wave"/>
+    <ns2:hasGenre rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#rock"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://musicbrainz.org/recording/09595161-717b-4ec5-94d1-9040aab8aae4">
     <rdf:type rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Song"/>
-    <ns2:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resistance</ns2:title>
-    <ns2:hasPart rdf:nodeID="Nf081d88f896b4d3faf06ee8b4e1b68c6"/>
-    <ns2:hasPart rdf:nodeID="Nb1df9d96ded746ff929617e4fc6362d8"/>
-    <ns2:hasPart rdf:nodeID="N4772c8887b9242f1afa78968fd3b5621"/>
-    <ns2:hasPart rdf:nodeID="Nf1ee24eb7a7c4cecb11fa0c31eb1685d"/>
-    <ns2:hasPart rdf:nodeID="N8c5ffd1d34894b66b438ff44b2cc1b1c"/>
-    <ns2:hasPart rdf:nodeID="Nac348e2fa249413f806c99a9bf423f40"/>
-    <ns2:hasPart rdf:nodeID="N6b17a8d4c5b546679a12482c884ca769"/>
-    <ns2:hasPart rdf:nodeID="N6f048303d8c0488cb0f407ebf75aa519"/>
-    <ns2:hasPart rdf:nodeID="N53e5623768774cfebc3e750ca5fc10d1"/>
-    <ns3:hasAuthor rdf:resource="https://www.wikidata.org/wiki/Q22151"/>
+    <ns1:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resistance</ns1:title>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resistance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8c5ffd1d34894b66b438ff44b2cc1b1c">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#permanent_wave">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permanent_wave</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#permanent wave">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permanent wave</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf1ee24eb7a7c4cecb11fa0c31eb1685d">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#p_e_r_m_a_n_e_n_t_ _w_a_v_e">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_e_r_m_a_n_e_n_t_ _w_a_v_e</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N53e5623768774cfebc3e750ca5fc10d1">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
-    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
-And are we out of sight?
-Or will our world come tumbling down?
-Will they find our hiding place?
-Is this our last embrace?
-Or will the walls start caving in?
-
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-If we live a life in fear
-I'll wait a thousand years
-Just to see you smile again
-Kill your prayers for love and peace
-You'll wake the Thought Police
-We can't hide the truth inside
-You might also like
-It could be wrong, could be wrong, but it should have been right
-It could be wrong, could be wrong, to let our hearts ignite
-It could be wrong, could be wrong, are we digging a hole?
-It could be wrong, could be wrong, this is out of control
-It could be wrong, could be wrong, it can never last
-It could be wrong, could be wrong, must erase it fast
-It could be wrong, could be wrong, but it could have been right
-It could be wrong, could be...
-
-Love is our resistance
-They'll keep us apart and they won't stop breaking us down
-Hold me
-Our lips must always be sealed
-
-The night has reached its end
-We can't pretend
-We must run
-We must run
-It's time to run
-Take us away from here
-Protect us from further harm
-Resistance16Embed</ns2:text>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#modern rock">
-    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modern rock</rdfs:label>
+    <ns1:hasPart rdf:nodeID="N0d5806a4b05c49d8a5853d96e594a1b1"/>
+    <ns3:hasAuthor rdf:resource="https://www.wikidata.org/wiki/Q22151"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#rock">
     <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
@@ -542,8 +82,8 @@ Resistance16Embed</ns2:text>
     <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modern_rock</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#r_o_c_k">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#permanent_wave">
     <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_o_c_k</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permanent_wave</rdfs:label>
   </rdf:Description>
 </rdf:RDF>
