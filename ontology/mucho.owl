@@ -321,6 +321,19 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAnnotation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAnnotation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAnnotationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Annotation"/>
+        <rdfs:label xml:lang="en">Specifies the relation between a text or a text fragent and its annotation</rdfs:label>
+        <rdfs:label xml:lang="en">hasAnnotation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAuthor -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAuthor">
@@ -330,6 +343,19 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
         <rdfs:comment xml:lang="en">Specifies the authoriality of an Agent over the involved entity (InformationObject).</rdfs:comment>
         <rdfs:label xml:lang="en">Has author</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasinformationSource -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasinformationSource">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
+        <rdfs:comment xml:lang="en">It specifies the relation between a qualified influence and the text, text fragment or annotation containing the information used to determine the influence.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasinformationSource</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -344,6 +370,15 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <prov:category xml:lang="en">expanded</prov:category>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation"/>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAdaptation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAnnotationOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAnnotationOf">
+        <rdfs:comment xml:lang="en">Inverse property of &quot;hasAnnotation&quot; for specifing the relation between an annotation and the text r text fragment it is related to.</rdfs:comment>
+        <rdfs:label xml:lang="en">isAnnotationOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -676,18 +711,6 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#annotation -->
-
-    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#annotation">
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Specifies the annotations reated to a specifc Text or TextFragment.</rdfs:comment>
-        <rdfs:label xml:lang="en">annotation</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation">
@@ -705,7 +728,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">Specifies the source of the information about the qualified influence between the involved entities</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the source of the information about the qualified influence between the involved entities intended as the webpage containing the involved information</rdfs:comment>
         <rdfs:label xml:lang="en">influence information source</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -846,6 +869,15 @@ For example, it can be used for specifying the relation expressing the fact that
         <rdfs:label xml:lang="en">Allusion</rdfs:label>
         <prov:category xml:lang="en">qualified</prov:category>
         <prov:definition xml:lang="en">An Allusion is an indirect reference to another entity intended as a resemblance or an indirect call to attention aiming at suggesting a relationship between the alluding entity and the one it has been alluded to.</prov:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Annotation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Annotation">
+        <rdfs:comment xml:lang="en">It specifies an annotation related to a Text or a TextFragment entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotation</rdfs:label>
     </owl:Class>
     
 
