@@ -355,6 +355,7 @@ Resistance16Embed</ns2:text>
     <ns2:hasPart rdf:nodeID="Nac348e2fa249413f806c99a9bf423f40"/>
     <ns2:hasPart rdf:nodeID="N6b17a8d4c5b546679a12482c884ca769"/>
     <ns2:hasPart rdf:nodeID="N6f048303d8c0488cb0f407ebf75aa519"/>
+    <ns2:hasPart rdf:nodeID="N53e5623768774cfebc3e750ca5fc10d1"/>
     <ns3:hasAuthor rdf:resource="https://www.wikidata.org/wiki/Q22151"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resistance</rdfs:label>
   </rdf:Description>
@@ -475,6 +476,59 @@ Resistance16Embed</ns2:text>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#p_e_r_m_a_n_e_n_t_ _w_a_v_e">
     <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_e_r_m_a_n_e_n_t_ _w_a_v_e</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53e5623768774cfebc3e750ca5fc10d1">
+    <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Lyrics"/>
+    <ns2:text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is our secret safe tonight?
+And are we out of sight?
+Or will our world come tumbling down?
+Will they find our hiding place?
+Is this our last embrace?
+Or will the walls start caving in?
+
+It could be wrong, could be wrong, but it should have been right
+It could be wrong, could be wrong, to let our hearts ignite
+It could be wrong, could be wrong, are we digging a hole?
+It could be wrong, could be wrong, this is out of control
+It could be wrong, could be wrong, it can never last
+It could be wrong, could be wrong, must erase it fast
+It could be wrong, could be wrong, but it could have been right
+It could be wrong, could be...
+
+Love is our resistance
+They'll keep us apart and they won't stop breaking us down
+Hold me
+Our lips must always be sealed
+
+If we live a life in fear
+I'll wait a thousand years
+Just to see you smile again
+Kill your prayers for love and peace
+You'll wake the Thought Police
+We can't hide the truth inside
+You might also like
+It could be wrong, could be wrong, but it should have been right
+It could be wrong, could be wrong, to let our hearts ignite
+It could be wrong, could be wrong, are we digging a hole?
+It could be wrong, could be wrong, this is out of control
+It could be wrong, could be wrong, it can never last
+It could be wrong, could be wrong, must erase it fast
+It could be wrong, could be wrong, but it could have been right
+It could be wrong, could be...
+
+Love is our resistance
+They'll keep us apart and they won't stop breaking us down
+Hold me
+Our lips must always be sealed
+
+The night has reached its end
+We can't pretend
+We must run
+We must run
+It's time to run
+Take us away from here
+Protect us from further harm
+Resistance16Embed</ns2:text>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#modern rock">
     <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicGenre"/>
