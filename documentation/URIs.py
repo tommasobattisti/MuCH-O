@@ -1,4 +1,4 @@
-from rdflib import URIRef, Namespace
+from rdflib import Namespace
 
 # Namespaces
 core = Namespace("https://w3id.org/polifonia/ontology/core/")
