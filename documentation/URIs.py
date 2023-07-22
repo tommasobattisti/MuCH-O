@@ -38,7 +38,7 @@ TextFragment = music_meta.TextFragment
 Annotation = mucho.Annotation
 
 # Object properties
-hasinformationSource = mucho.hasinformationSource
+hasInformationSource = mucho.hasinformationSource
 hasAuthor = mucho.hasAuthor
 isAuthorOf = mucho.isAuthorOf
 hasGenre = music_meta.hasGenre
