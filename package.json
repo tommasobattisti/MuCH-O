@@ -1,0 +1,25 @@
+{
+  "name": "much-o",
+  "version": "1.0.0",
+  "description": "This is a repository for the Knowledge Representation and Extraction project",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/src/input.css -o ./assets/css/output.css",
+    "watch": "npx tailwindcss -i ./assets/src/input.css -o ./assets/css/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommasobattisti/MuCH-O.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tommasobattisti/MuCH-O/issues"
+  },
+  "homepage": "https://github.com/tommasobattisti/MuCH-O#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
