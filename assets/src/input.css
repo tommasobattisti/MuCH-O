@@ -1,3 +1,171 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.sm-nav-link {
+    @apply hover:text-[#EFCAA4] transition-all ease-out duration-[400ms];
+}
+
+
+
+.sm-nav-link, .lg-nav-link {
+    @apply hover:text-[#e95122] transition-all ease-out duration-[400ms];
+}
+
+
+
+.active-sm-nav-link {
+    @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
+}
+
+.inactive-sm-nav-link {
+    @apply text-[#161616] no-underline;
+}
+
+.mucho-h2 {
+    @apply md:text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.03em]  mb-6;
+}
+
+/*
+
+
+.mucho-h3 {
+    @apply text-4xl md:text-5xl 2xl:text-6xl tracking-[-0.03em];
+}
+
+.sub-section-title {
+    @apply paragraph uppercase font-semibold tracking-[0.01em] text-base lg:text-lg  2xl:text-xl;
+}
+
+.paragraph {
+  @apply text-base lg:text-lg 2xl:text-xl;
+}
+
+.paragraph-small {
+    @apply text-sm lg:text-base 2xl:text-lg;
+}
+
+.mucho-btn {
+    @apply font-medium text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-3 py-2 md:px-4 md:py-3 2xl:px-5 2xl:py-4 md:ml-[0.5px] border-x-[3px] 2xl:border-x-4 border-[#E95122] hover:bg-[#E95122] transition-all ease-out duration-[500ms];
+}
+
+.viz-tab-text {
+    @apply font-medium text-2xl md:text-3xl 2xl:text-4xl text-[#161616] pr-2;
+}
+
+.inactive-viz-tab-text {
+    @apply font-medium text-xl md:text-2xl 2xl:text-2xl text-[rgba(22,22,22,0.8)];
+}
+
+
+li {
+    @apply before:font-semibold before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#E95122] before:content-['-'] before:pr-[0.8rem];
+}
+
+
+.in-text-a {
+    @apply font-medium decoration-[#E95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px] hover:no-underline hover:text-[#E95122] transition-all duration-300 ease-in-out;
+}
+
+
+.keyword {
+    @apply font-medium;
+}
+
+
+.plus-icons {
+    @apply text-3xl md:text-4xl 2xl:text-5xl tracking-[-0.03em];
+}
+
+
+
+.mucho-border-bottom {
+    @apply border-[#161616] border-b-[3px] 2xl:border-b-4;
+}
+
+.mucho-border-top {
+    @apply border-[#161616] border-t-[3px] 2xl:border-t-4;
+}
+
+.icon-container {
+    @apply flex h-[60px] md:h-[80px] 2xl:h-[120px] aspect-square
+}
+
+
+
+
+.mucho-padding-bottom {
+    @apply pb-8 md:pb-10 2xl:pb-20;
+}
+
+.mucho-padding-top {
+    @apply pt-8 md:pt-10 2xl:pt-20;
+}
+
+.section-margins {
+    @apply mt-20 md:mt-40 2xl:mt-60;
+}
+
+
+
+
+.analysis-h3 {
+    @apply text-[rgba(22,22,22,0.5)];
+}
+
+.active-analysis {
+    @apply text-[#161616];
+}
+
+
+.active-sm-nav-link {
+    @apply text-[#fdfdfd] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
+}
+
+.inactive-sm-nav-link {
+    @apply text-[rgba(253,253,253,0.8)] no-underline;
+}
+
+.active-lg-nav-link {
+    @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px];
+}
+
+.inactive-lg-nav-link {
+    @apply text-[rgba(22,22,22,0.8)] no-underline;
+}
+
+.sm-nav-link, .lg-nav-link {
+    @apply hover:text-[#e95122] transition-all ease-out duration-[400ms];
+}
+
+
+td, th {
+    @apply py-5 px-5;
+}
+
+
+tbody tr {
+    @apply hover:bg-[#161616]/10;
+}
+
+.table-check-container {
+    @apply flex h-[3em] w-full justify-center;
+}
+
+
+
+.metadata-table-body tr {
+    @apply flex flex-row flex-nowrap;
+}
+
+.metadata-table-body tr td:nth-child(1) {
+    @apply w-2/12 font-semibold;
+}
+
+.metadata-table-body tr td:nth-child(2) {
+    @apply w-10/12;
+}
+*/

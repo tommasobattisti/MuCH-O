@@ -3,13 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mucho - Music to Cultural Heritage Ontology</title>
 
     <!--Tailwind css-->
     <link rel="stylesheet" href="./assets/css/output.css">
+    <!--Style css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Red Hot Mono-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--Main Script-->
+    <script src="./assets/scripts/script.js"></script>
+
+    <!--Waypoints-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
 </head>
-<body>
+<!--Rosa: #EFCAA4 - Verdino: #1ADECA-->
+
+<body class="bg-zinc-100">
+    <header class="fixed w-[100%] z-10 backdrop-blur-xl bg-zinc-100 drop-shadow-md">
+        <nav class="px-[7.5%] md:px-[10%] 2xl:px-[15%] py-4 h-[60px] 2xl:h-[80px]">
+            <div class="h-[100%] flex flex-row items-center justify-between">
+                <a id="logo" href="#site-banner" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold txt-l-100 montserrat">MuCH-O</a>
+                <button id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>      
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div id="mobile-menu-dropdown" class="fixed top-0 left-0 w-full h-[100vh] z-[5] backdrop-blur-xl bg-zinc-300/30 hidden">
+        <div class="w-[100%] h-[100%] flex flex-col px-[7.5%] md:px-[10%] 2xl:px-[15%] items-start justify-center backdrop-blur-lg pt-[60px] 2xl:pt-[80px]">
+            <a id="project-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link pb-[3vh]" href="#project-section-main">Project</a>
+            <a id="ke-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link pb-[3vh]" href="#ke-section-main">Knowledge Extraction</a>
+            <a id="ontology-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link pb-[3vh]" href="#ontology-section-main">Ontology & Knowledge Graph</a>
+            <a id="results-metadata-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link pb-[3vh]" href="#results-metadata-section-main">Results</a>
+            <a id="about-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link" href="#about-section-main">About</a>
+        </div>
+    </div>
     
 </body>
 </html>
