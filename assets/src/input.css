@@ -5,20 +5,20 @@
 
 
 
-.sm-nav-link {
-    @apply hover:text-[#EFCAA4] transition-all ease-out duration-[400ms];
+.in-text-a {
+    @apply cursor-pointer font-medium decoration-[#0E9594] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px] hover:no-underline hover:text-[#0E9594] transition-all duration-300 ease-in-out;
 }
 
 
 
-.sm-nav-link, .lg-nav-link {
-    @apply hover:text-[#e95122] transition-all ease-out duration-[400ms];
+.sm-nav-link {
+    @apply hover:text-[#0E9594] transition-all ease-out duration-[400ms];
 }
 
 
 
 .active-sm-nav-link {
-    @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
+    @apply text-[#161616] decoration-[#0E9594] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
 }
 
 .inactive-sm-nav-link {
@@ -26,7 +26,15 @@
 }
 
 .mucho-h2 {
-    @apply md:text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.03em]  mb-6;
+    @apply text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.03em]  mb-6;
+}
+
+.m-mucho-h2 {
+    @apply text-left text-[1.8rem] sm:text-[2.25rem] lg:text-[3rem] font-medium tracking-[-0.03em] mb-2;
+}
+
+.mucho-h3 {
+    @apply text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.03em];
 }
 
 .paragraph {
@@ -42,9 +50,7 @@
     @apply font-medium text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-2 py-1 md:px-3 md:py-2 2xl:px-4 2xl:py-3 md:ml-[0.5px] border-[3px] 2xl:border-4 rounded-3xl border-[#161616] hover:bg-[#161616] transition-all ease-out duration-[500ms];
 }
 
-.mucho-h3 {
-    @apply text-4xl md:text-5xl 2xl:text-6xl tracking-[-0.03em];
-}
+
 
 .sub-section-title {
     @apply paragraph uppercase font-semibold tracking-[0.01em] text-base lg:text-lg  2xl:text-xl;
@@ -72,9 +78,7 @@ li {
 }
 
 
-.in-text-a {
-    @apply font-medium decoration-[#E95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px] hover:no-underline hover:text-[#E95122] transition-all duration-300 ease-in-out;
-}
+
 
 
 .keyword {

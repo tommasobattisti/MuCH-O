@@ -34,7 +34,7 @@
 <!--Rosa: #EFCAA4 - Verdino: #1ADECA-->
 
 <body class="bg-zinc-100">
-    <header class="fixed w-[100%] z-10 backdrop-blur-xl bg-zinc-100 drop-shadow-md">
+    <header class="fixed w-[100%] z-10 backdrop-blur-xl bg-zinc-100/70 drop-shadow-md">
         <nav class="px-[7.5%] md:px-[10%] 2xl:px-[15%] py-4 h-[60px] 2xl:h-[80px]">
             <div class="h-[100%] flex flex-row items-center justify-between">
                 <a id="logo" href="#site-banner" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold txt-l-100 montserrat">MuCH-O</a>
@@ -46,7 +46,7 @@
             </div>
         </nav>
     </header>
-    <div id="mobile-menu-dropdown" class="fixed top-0 left-0 w-full h-[100vh] z-[5] backdrop-blur-xl bg-zinc-300/30 hidden">
+    <div id="mobile-menu-dropdown" class="fixed top-0 left-0 w-full h-[100vh] z-[5] backdrop-blur-xl bg-zinc-300/60 hidden">
         <div class="w-[100%] h-[100%] flex flex-col px-[7.5%] md:px-[10%] 2xl:px-[15%] items-start justify-center backdrop-blur-lg pt-[60px] 2xl:pt-[80px]">
             <a id="project-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link pb-[3vh]" href="#project-section-main">Project</a>
             <a id="ke-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link pb-[3vh]" href="#ke-section-main">Knowledge Extraction</a>
@@ -55,12 +55,53 @@
             <a id="about-sm-nav-link" class="sm-nav-link mucho-h2 inactive-sm-nav-link" href="#about-section-main">About</a>
         </div>
     </div>
-    <div id="hero-section" class="pt-[60px] 2xl:pt-[80px] px-[7.5%] md:px-[10%] 2xl:px-[15%] h-[80vh] border-b-2">
-        <h1 class="montserrat text-[2rem] sm:text-[2.5rem] md:text[3rem] lg:text-[4rem] tracking-[-0.05em] font-medium">MuCH-O</h1>
-        <p class="paragraph">Extracting relations between songs and cultural heritage objects and agents with the <span class="font-semibold">Mu</span>sic to <span class="font-semibold">C</span>ultural <span class="font-semibold">H</span>eritage <span class="font-semibold">O</span>ntology.</p>
-        <p class="paragraph">No es mucho, pero es MuCH-o.</p>
-        <button class="mucho-btn">Discover more</button>
+
+    <!--HERO SECTION-->
+    <div id="hero-section" class="w-full flex flex-col sm:flex-row pt-[60px] 2xl:pt-[80px] px-[7.5%] md:px-[10%] 2xl:px-[15%] h-[80vh] border-[#161616] border-b-4">
+        <div class="w-1/2 flex align-middle justify-start">
+            <img class="w-full" src="./assets/svg/graph.svg">
+        </div>
+        <div class="w-full sm:w-1/2 flex flex-col justify-center space-y-5">
+            <div class="flex flex-col w-full md:space-y-[-10px] justify-end">
+                <h1 class="montserrat m-0 text-[2rem] sm:text-[2.5rem] md:text[3rem] lg:text-[4rem] tracking-[-0.05em] font-medium">MuCH-O</h1>
+                <p class="paragraph">Extracting relations between songs and cultural heritage objects and agents with the <span class="font-semibold">Mu</span>sic to <span class="font-semibold">C</span>ultural <span class="font-semibold">H</span>eritage <span class="font-semibold">O</span>ntology.</p>
+            </div>
+            <div class="w-full">
+                <button class="mucho-btn"><a href="#project-section-main">Discover more</a></button>
+            </div>
+        </div>
     </div>
+    <div class="h-[20vh] flex flex-col justify-center px-[7.5%] md:px-[10%] 2xl:px-[15%] border-[#161616] border-b-4">
+        <p class="paragraph sm:text-center">No es mucho, pero es MuCH-O</p>
+    </div>
+
+    <main class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] my-20">
+        <section id="project-section-main">
+            <div>
+                <h2 class="m-mucho-h2 montserrat">The project</h2>
+                <p class="paragraph">This projects started with specific competency questions for creafting an ontology able to map connections between a song lyrics and interpretations and other cultural heritage objects and agents.
+                Embark yourself on this journey to see how the <span class="font-semibold">mucho-gustore</span> unveils different levels of relations.</p>
+                <p class="paragraph">Data have been extracted from Spotify, Genius, and Musicbrainz. Sentence-BERT has been employed for candidate ranking and entities have been retrieved and linked to Wikidata and DBpedia. Finally, the recent Google Bard model has been used for relation extraction from Wikipedia pages and WordNet synsets for tracing back relations to standard vocabulary used in the ontology development.</p>
+                <p class="paragraph">Knowledge graph population and subsequent answering of competency questions will result in understanding rich interconnections of music, providing users with new entities to discover and to be suggested with on the basis of cultural significance.</p>
+            </div>
+        </section>
+
+        <!-- KE SECTION -->
+        <section id="ke-section-main" class="flex flex-col space-y-10">
+            <div>
+                <h2 class="m-mucho-h2 montserrat">Knowledge Extraction</h2>
+                <p class="paragraph">The knoweledge extraction process has been carried out using Python3 and different libraries for data extraction, sentence similarity, synsets similarity, candidate entity ranking, knowledge graph population, etc.</p>
+                <p class="paragraph">The whole process has been performed using a <a class="in-text-a" target="_blank" href="https://github.com/tommasobattisti/MuCH-O/blob/main/documentation/workflow.ipynb">Jupyter Notebook</a> and, therefore, it can be analysed completely.</p>
+                <p class="paragraph">Thus, this section aims at providing just an overview of the mentioned process.</p>
+            </div>
+            <div>
+                <h3 class="mucho-h3">01. Getting data</h3>
+            </div>
+            
+            
+        </section>
+    </main>
+    
     
 </body>
 </html>

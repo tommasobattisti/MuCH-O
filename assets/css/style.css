@@ -8,6 +8,7 @@ body {
 }
 
 .mucho-btn {
+    width: fit-content;
     padding: 0.5rem 1rem;
     transition: all 0.2s ease;
     color: #161616;
@@ -15,7 +16,7 @@ body {
     letter-spacing: 1px;
     border: solid 3px #161616;
     border-radius: 2.5rem;
-    box-shadow: 5px 5px 0px 0px;
+    box-shadow: 5px 5px 0px 0px #161616;
     transform: translate(-5px, 0px);
 }
 
