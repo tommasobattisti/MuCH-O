@@ -76,13 +76,26 @@
     </div>
 
     <main class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] my-20">
-        <section id="project-section-main">
+        <section id="project-section-main" class="flex flex-col space-y-10">
             <div>
                 <h2 class="m-mucho-h2 montserrat">The project</h2>
                 <p class="paragraph">This projects started with specific competency questions for creafting an ontology able to map connections between a song lyrics and interpretations and other cultural heritage objects and agents.
                 Embark yourself on this journey to see how the <span class="font-semibold">mucho-gustore</span> unveils different levels of relations.</p>
                 <p class="paragraph">Data have been extracted from Spotify, Genius, and Musicbrainz. Sentence-BERT has been employed for candidate ranking and entities have been retrieved and linked to Wikidata and DBpedia. Finally, the recent Google Bard model has been used for relation extraction from Wikipedia pages and WordNet synsets for tracing back relations to standard vocabulary used in the ontology development.</p>
                 <p class="paragraph">Knowledge graph population and subsequent answering of competency questions will result in understanding rich interconnections of music, providing users with new entities to discover and to be suggested with on the basis of cultural significance.</p>
+            </div>
+            <div>
+                <h3 class="mucho-h3">Competency questions</h3>
+                <p class="paragraph">The project has been shaped by the compenecy questions stated before starting the knowledge extraction process and the ontology development. in this way, the project development started with a clear vision of the data and the modelling structure needed for answering efficiently and pursuing the projects' objectives.</p>
+                <p class="paragraph">Knowledge extraction has been performed with the intent of proposing a case study using a single song and its lyrics' annotations as starting point: "Resistance" by Muse. The following questions have been formulated starting from these ideas:</p>
+                <ul class="pt-5">
+                    <li>Which entity/ies are referenced by the song?</li>
+                    <li>Which are the annotations that have been identified to be referencing the above entity and what do they contain?</li>
+                    <li>Which are the lyrics fragments that have been annotated with the above annotation (therefore referencing in some way the involved entity)?</li>
+                    <li>Which entities have been influenced in some way by the entity referenced by the song?</li>
+                    <li>Which Cultural heritage objects are related to the entity referenced by the song (and therefore to the song with a two step connection) and by what kind of relation?</li>
+                    <li>From where was each of these relations extracted? What does the source text say about them?</li>
+                </ul>
             </div>
         </section>
 
@@ -95,7 +108,21 @@
                 <p class="paragraph">Thus, this section aims at providing just an overview of the mentioned process.</p>
             </div>
             <div>
+                <h3 class="mucho-h3">00. Imports</h3>
+                <script src="https://gist.github.com/tommasobattisti/751ce39792d2a3bfd66e1753ed17ec6e.js"></script>
+            </div>
+            <div>
                 <h3 class="mucho-h3">01. Getting data</h3>
+                <p class="paragraph"></p>
+                <script src="https://gist.github.com/tommasobattisti/8f411c2d834f40aecfd56ecae905f667.js"></script>
+            </div>
+            <div>
+                <h3 class="mucho-h3">02. Information extraction from song annotation</h3>
+                <script src="https://gist.github.com/tommasobattisti/5248497921f3b1f227577157614bc296.js"></script>
+            </div>
+            <div>
+                <h3 class="mucho-h3">03. Wikidata candidate entities retrieval</h3>
+                <script src="https://gist.github.com/tommasobattisti/c32ec4972ff1d07a97c4c2a38b3d9b65.js"></script>
             </div>
             
             
