@@ -10,7 +10,7 @@ mucho = Namespace("https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main
 # Classes
 Agent = core.Agent
 Group = mucho.Group
-MusicEnsemble  = music_meta.MusicEnsemble
+MusicEnsenble  = music_meta.MusicEnsenble
 Person = core.Person
 Musician = music_meta.Musician
 InformationObject = core.InformationObject
