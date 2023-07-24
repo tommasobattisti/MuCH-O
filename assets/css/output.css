@@ -701,6 +701,10 @@ video {
   padding-top: 60px;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -870,6 +874,38 @@ video {
   }
 }
 
+li {
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+
+li::before {
+  padding-right: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(14 149 148 / var(--tw-text-opacity));
+  --tw-content: '-';
+  content: var(--tw-content);
+}
+
+@media (min-width: 1024px) {
+  li::before {
+    content: var(--tw-content);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  li::before {
+    content: var(--tw-content);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 /*
 .mucho-btn {
     @apply font-medium text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-2 py-1 md:px-3 md:py-2 2xl:px-4 2xl:py-3 md:ml-[0.5px] border-[3px] 2xl:border-4 rounded-3xl border-[#161616] hover:bg-[#161616] transition-all ease-out duration-[500ms];
@@ -898,9 +934,7 @@ video {
 }
 
 
-li {
-    @apply before:font-semibold before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#E95122] before:content-['-'] before:pr-[0.8rem];
-}
+
 
 
 

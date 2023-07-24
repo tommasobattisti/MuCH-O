@@ -41,7 +41,9 @@
     @apply text-base lg:text-lg 2xl:text-xl;
   }
 
-
+li {
+    @apply font-medium pt-2 before:font-semibold before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#0E9594] before:content-['-'] before:pr-[0.8rem];
+}
 
 
 
@@ -73,9 +75,7 @@
 }
 
 
-li {
-    @apply before:font-semibold before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#E95122] before:content-['-'] before:pr-[0.8rem];
-}
+
 
 
 
