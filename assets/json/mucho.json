@@ -1,0 +1,4526 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "https://w3id.org/polifonia/ontology/core",
+      "http://www.w3.org/2002/07/owl",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/ns/prov",
+      "http://www.w3.org/2001/XMLSchema",
+      "https://w3id.org/polifonia/ontology/music-meta",
+      "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "ns": "http://creativecommons.org/ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "prov": "http://www.w3.org/ns/prov#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title": {
+      "en": "MuCH-Ontology"
+    },
+    "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+    "author": [
+      "Tommaso Battisti"
+    ],
+    "description": {
+      "en": "The MuCH-Ontology is a semantic model to describe different relations connecting together music entities such as songs and albums and other entities in the realm of Cultural Heritage.\nThe MuCH-Ontology reuses Polifonia's Music Meta Ontology for music entities and music artists descriptions and extends the reach of the Prov Ontology's qualified influences in order to capture more specific relationships between Cultural Heritage entities."
+    },
+    "labels": {
+      "en": "MuCH-Ontology"
+    },
+    "comments": {
+      "en": "The MuCH-Ontology is a semantic model to describe different relations connecting together music entities such as songs and albums and other entities in the realm of Cultural Heritage.\nThe MuCH-Ontology reuses Polifonia's Music Meta Ontology for music entities and music artists descriptions and extends the reach of the Prov Ontology's qualified influences in order to capture more specific relationships between Cultural Heritage entities."
+    },
+    "other": {
+      "license": [
+        {
+          "identifier": "license",
+          "language": "en",
+          "value": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "type": "label"
+        },
+        {
+          "identifier": "license",
+          "language": "en",
+          "value": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "type": "label"
+        }
+      ],
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "en",
+          "value": "Tommaso Battisti",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "MuCH-Ontology",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.20",
+      "translation": [
+        413.55,
+        242.32
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 310,
+      "datatypeDistance": 210
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": true
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "16",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "23",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "28",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "32",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "41",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "37",
+      "type": "owl:Class"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "57",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "52",
+      "type": "owl:Class"
+    },
+    {
+      "id": "81",
+      "type": "owl:Class"
+    },
+    {
+      "id": "74",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "43",
+      "type": "owl:Class"
+    },
+    {
+      "id": "85",
+      "type": "owl:Class"
+    },
+    {
+      "id": "86",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "42",
+      "type": "owl:Class"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "68",
+      "type": "owl:Class"
+    },
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "90",
+      "type": "owl:Class"
+    },
+    {
+      "id": "91",
+      "type": "owl:Class"
+    },
+    {
+      "id": "56",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "95",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "75",
+      "type": "owl:Class"
+    },
+    {
+      "id": "62",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "owl:Class"
+    },
+    {
+      "id": "88",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "53",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "124",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "126",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "34",
+      "type": "owl:Class"
+    },
+    {
+      "id": "44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "87",
+      "type": "owl:Class"
+    },
+    {
+      "id": "100",
+      "type": "owl:Class"
+    },
+    {
+      "id": "26",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1070.23,
+        188.56
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Mention",
+        "en": "Mention"
+      },
+      "comment": {
+        "en": "An instance of Mention provides additional descriptions about the binary mentions relation from some mentioning entity to another mentioned entity."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A mention is an explicit reference to something (another entity) but without going into detail or reporting part of the mentioned entity's content.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -475.52,
+        382.06
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "anyURI"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1029.29,
+        65.48
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -790.25,
+        1330.66
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -1148,
+        855.92
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1043.42,
+        315.55
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        646.1,
+        1719.79
+      ]
+    },
+    {
+      "id": "32",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/Lyrics",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "Lyrics",
+        "en": "Lyrics"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "The textual component of a musical composition that consists of the words, verses, or poetic expressions sung or spoken during the performance. Lyrics provide the vocal content and convey the narrative, emotions, or messages expressed through the music. They encompass the written representation of the lyrical content, which may be organized into lines, stanzas, or verses, forming an integral part of the composition."
+      },
+      "pos": [
+        1176.06,
+        -1124.28
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Reference",
+        "en": "Reference"
+      },
+      "comment": {
+        "en": "The more specific forms of Reference should be asserted if they apply."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A reference is any kind of direct or indirect mention, allusion, or citation to some external entity with respect to the referencing one.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -247.3,
+        749.38
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://www.w3.org/ns/prov#Influence",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "Influence",
+        "undefined": "Influence"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable."
+      },
+      "annotations": {
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "derivations",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#wasInfluencedBy",
+            "type": "iri"
+          }
+        ],
+        "dm": [
+          {
+            "identifier": "dm",
+            "language": "undefined",
+            "value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence",
+            "type": "label"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ],
+        "n": [
+          {
+            "identifier": "n",
+            "language": "undefined",
+            "value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-influence",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        700.81,
+        207.35
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Song",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Song",
+        "en": "Song"
+      },
+      "comment": {
+        "en": "A Song abstracts the concept of audio recording representing a music entity intended as a single track which may be part of an album or other kind of collections."
+      },
+      "pos": [
+        13.97,
+        -971.07
+      ]
+    },
+    {
+      "id": "3",
+      "iri": "https://w3id.org/polifonia/ontology/core/InformationObject",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "InformationObject",
+        "en": "Information object"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "A piece of information, such as a musical composition, a text, a word, a picture, independently from how it is concretely and phisically realized."
+      },
+      "pos": [
+        152.26,
+        388.44
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/TextFragment",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "TextFragment",
+        "en": "Text Fragment"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "A fragment or excerpt of text within a larger textual component of a musical composition. It encapsulates a specific portion of the lyrics, libretto, or other textual elements associated with the music. A TextFragment provides a smaller unit of textual content that can be individually referenced or analyzed within the context of the composition."
+      },
+      "pos": [
+        1302.45,
+        -888.02
+      ]
+    },
+    {
+      "id": "50",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1912.31,
+        482.77
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.w3.org/ns/prov#EntityInfluence",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "EntityInfluence",
+        "undefined": "EntityInfluence"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses."
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "editorsDefinition": [
+          {
+            "identifier": "editorsDefinition",
+            "language": "en",
+            "value": "EntityInfluence is the capacity of an entity to have an effect on the character, development, or behavior of another by means of usage, start, end, derivation, or other. ",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ],
+        "seeAlso": [
+          {
+            "identifier": "seeAlso",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#entity",
+            "type": "iri"
+          }
+        ]
+      },
+      "pos": [
+        334.14,
+        787.04
+      ]
+    },
+    {
+      "id": "57",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Annotation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Annotation",
+        "en": "Annotation"
+      },
+      "comment": {
+        "en": "It specifies an annotation related to a Text or a TextFragment entity."
+      },
+      "pos": [
+        1684.26,
+        -200.83
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/MusicArtist",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "MusicArtist",
+        "en": "Music Artist"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "An individual or group involved in creating, performing, or producing music. It encompasses musicians, singers, bands, composers, conductors, producers, and other artistic entities within the music industry."
+      },
+      "pos": [
+        1345.07,
+        1404.52
+      ]
+    },
+    {
+      "id": "52",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Group",
+        "en": "Group"
+      },
+      "comment": {
+        "en": "A named group or collective formed by two or more people that act collaboratively towards the achievement of a particular goal (e.g., an art collective aiming at producing art pieces, a band aiming at publishing albums and performing live, etc.).\nDiffers from two or more people collaborating without forming a recognised and named group that can identify them as a collective."
+      },
+      "pos": [
+        1644.28,
+        701.66
+      ]
+    },
+    {
+      "id": "81",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        470.12,
+        -1039.11
+      ]
+    },
+    {
+      "id": "74",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        665.45,
+        566.86
+      ]
+    },
+    {
+      "id": "84",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        871.26,
+        1441.12
+      ]
+    },
+    {
+      "id": "43",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#AudiovisualEntity",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "AudiovisualEntity",
+        "en": "Audiovisual Entity"
+      },
+      "comment": {
+        "en": "This class represents an Information Object whose production, existence, and fruition needs the processing of both a soud and a visual component (e.g., films, television products, videoclips, etc.)."
+      },
+      "pos": [
+        -235.43,
+        -5.25
+      ]
+    },
+    {
+      "id": "85",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        641.92,
+        721.85
+      ]
+    },
+    {
+      "id": "86",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        708.77,
+        979.59
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://www.w3.org/ns/prov#Derivation",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "Derivation",
+        "undefined": "Derivation"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "The more specific forms of prov:Derivation should be asserted if they apply."
+      },
+      "annotations": {
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "derivations",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#wasDerivedFrom",
+            "type": "iri"
+          }
+        ],
+        "dm": [
+          {
+            "identifier": "dm",
+            "language": "undefined",
+            "value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Derivation",
+            "type": "label"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ],
+        "constraints": [
+          {
+            "identifier": "constraints",
+            "language": "undefined",
+            "value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+            "type": "label"
+          }
+        ],
+        "n": [
+          {
+            "identifier": "n",
+            "language": "undefined",
+            "value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#Derivation-Relation",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -85.02,
+        1023.22
+      ]
+    },
+    {
+      "id": "42",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#LiteraryEntity",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "LiteraryEntity",
+        "en": "Literary Entity"
+      },
+      "comment": {
+        "en": "This class represents an Information Object intended as a written work related to the concept of literature intended as both any collection of written works and as an art form (e.g., novels, poems, letters, diaries, essays, plays, etc.)"
+      },
+      "pos": [
+        -321.32,
+        89.87
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/Text",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "Text",
+        "en": "Text"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "A written or textual component of a musical composition. It encompasses the textual elements, such as lyrics or libretto, that accompany or form part of a musical work."
+      },
+      "pos": [
+        854.59,
+        -723.84
+      ]
+    },
+    {
+      "id": "68",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1166.65,
+        -300.03
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/MusicGenre",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "MusicGenre",
+        "en": "Music Genre"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "A specific category or classification of music that shares common characteristics, styles, or cultural origins. It encompasses distinct musical traditions, styles, or movements that define a particular genre."
+      },
+      "pos": [
+        1539.15,
+        1824.37
+      ]
+    },
+    {
+      "id": "90",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        368.78,
+        -1037.06
+      ]
+    },
+    {
+      "id": "91",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        780.67,
+        -1082.23
+      ]
+    },
+    {
+      "id": "56",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1386.57,
+        -506.96
+      ]
+    },
+    {
+      "id": "12",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        294.13,
+        -898.88
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        -1042.21,
+        1148.71
+      ]
+    },
+    {
+      "id": "2",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        888.03,
+        1331.06
+      ]
+    },
+    {
+      "id": "95",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -936.29,
+        1447.41
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "https://w3id.org/polifonia/ontology/core/Agent",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "Agent",
+        "en": "Agent"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "Any agentive Object, either physical (e.g. a person, a robot), or social (e.g. a corporation, an institution, a community)"
+      },
+      "pos": [
+        1128.36,
+        906.92
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/Musician",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "Musician",
+        "en": "Musician"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "An individual who is skilled in playing a musical instrument, singing, or composing music. It encompasses instrumentalists, vocalists, composers, conductors, and other individuals actively engaged in the creation, performance, or production of music."
+      },
+      "pos": [
+        1850.35,
+        1319.48
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "MusicEnsenble",
+        "en": "Music Ensenble"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "A group or collective of musicians who perform together as an ensemble. It encompasses various types of musical groups, such as orchestras, bands, choirs, chamber ensembles, and jazz ensembles."
+      },
+      "pos": [
+        1841.18,
+        1144.36
+      ]
+    },
+    {
+      "id": "88",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Basis",
+        "en": "Basis"
+      },
+      "comment": {
+        "en": "An instance of Basis provides additional descriptions about the binary isBasedOn relation from some derived entity to another entity from which it was based on. It does not necessarily involve the change of medium bewteeen the two entities."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Being based on something means to have an existent entity acting as the primary source for shaping a new entity maintaining some arbitrary connections between the different levels of significance.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        323.32,
+        947.42
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/MusicEntity",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "MusicEntity",
+        "en": "Music Entity"
+      },
+      "attributes": [
+        "external"
+      ],
+      "comment": {
+        "en": "This class represents an Information Object, which is defined as the sum of all the elements that make up a piece of music. A music entity abstract a musical work, as it may results from a composition process, an improvisation, or be the result of non-written transmission."
+      },
+      "pos": [
+        358.1,
+        -536.71
+      ]
+    },
+    {
+      "id": "53",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Inspiration",
+        "en": "Inspiration"
+      },
+      "comment": {
+        "en": "An instance of inspiration provides additional descriptions about the binary wasInspiredBy relation between two entities."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An inspiration is the process of being stimulated by some existent entity to do, produce, or create some new entity. It consists getting from something  a new or creative idea that can be applied in the creation of something new.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -105.24,
+        900.64
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Citation",
+        "en": "Citation"
+      },
+      "comment": {
+        "en": "An instance of Citation provides additional descriptions about the binary cites relation from some citing entity to another cited entity. It should be intended as a synonym of quotation."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A Citation is here intended with its meanong of quotation from an entity to another. It should be intended as an explict reuse of some part of another entity's content rather than as a general reference to it.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -432.44,
+        315.64
+      ]
+    },
+    {
+      "id": "124",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1252.6,
+        1763.6
+      ]
+    },
+    {
+      "id": "126",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1114.17,
+        1691.7
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Allusion",
+        "en": "Allusion"
+      },
+      "comment": {
+        "en": "An instance of Allusion provides additional descriptions about the binary alludesTo relation from some alluding entity to another entity it has been alluded to."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An Allusion is an indirect reference to another entity intended as a resemblance or an indirect call to attention aiming at suggesting a relationship between the alluding entity and the one it has been alluded to.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -377.14,
+        266.98
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#VisualArtEntity",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "VisualArtEntity",
+        "en": "Viausl Art Entity"
+      },
+      "comment": {
+        "en": "This class represents an Information Object whose production, existence, and fruition is primarily based on visual characteristics (e.g., paintings, photographs, sculptures, etc.).\nDiffers from the common definition of visual arts since it does not include audiovisual works."
+      },
+      "pos": [
+        -113.65,
+        -76.8
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "Adaptation",
+        "en": "Adaptation"
+      },
+      "comment": {
+        "en": "An instance of Adaptation provides additional descriptions about the binary isAdaptationOf relation from some derived entity to another entity from which it was adapted (typically involving an entity with another medium).\nFor example, it can be used for specifying the relation expressing the fact that the film \"The Shining\" was adapted from the homonymous book."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An adaptation is the act of adjusting some existent entity in order to make it fit to different conditions, in this case determined by the medium on which it is delivered. The adaptation process ends with the creation of a new entity that has different structural characteristics but still represents the same nucleus of meaning.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -377.84,
+        689.47
+      ]
+    },
+    {
+      "id": "100",
+      "iri": "https://w3id.org/polifonia/ontology/core/Person",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "Person",
+        "en": "Person"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1615.61,
+        908.65
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#MusicAlbum",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "MusicAlbum",
+        "en": "Music Album"
+      },
+      "comment": {
+        "en": "A Music Album is a music entity abstracting the concept of a collection of tracks (songs)."
+      },
+      "pos": [
+        -183.79,
+        -601.77
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "1",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "4",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "7",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "10",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "20",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "24",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "30",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "36",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "39",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "40",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "45",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "46",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "48",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "51",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "54",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "55",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "59",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "60",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "58",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "61",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "64",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "65",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "66",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "67",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "69",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "70",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "71",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "72",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "73",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "76",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "79",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "80",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "82",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "89",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "93",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "13",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "27",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "96",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "97",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "101",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "102",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "14",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "104",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "105",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "106",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "107",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "108",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "109",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "110",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "111",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "112",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "113",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "114",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "38",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "115",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "103",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "98",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "116",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "117",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "118",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "119",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "120",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "121",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "122",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "123",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "92",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "49",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "125",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "127",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "128",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "129",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "130",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "131",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "132",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "133",
+      "type": "owl:allValuesFrom"
+    },
+    {
+      "id": "134",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "135",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "99",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "136",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "6",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "137",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "138",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "47",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "139",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "GENERATED-UNION-81-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-81-31-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-74-75-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-74-3-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-84-75-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-84-22-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-85-75-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-85-3-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-75-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-22-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-68-31-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-68-57-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-68-37-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-90-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-90-31-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-91-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-91-31-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-91-37-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-56-31-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-56-37-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-12-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-12-31-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-2-75-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-2-22-1",
+      "type": "setOperatorProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "1",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAuthorOf",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "isAuthorOf",
+        "en": "Is author of"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Inverse property of hasAutor. Specifies the entity (InformationObject) the invoved Agent has authoriality over."
+      },
+      "domain": "86",
+      "range": "3",
+      "inverse": "123",
+      "pos": [
+        430.52,
+        684.02
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://www.w3.org/ns/prov#qualifiedDerivation",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "qualifiedDerivation",
+        "undefined": "qualifiedDerivation"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "inverse": [
+          {
+            "identifier": "inverse",
+            "language": "undefined",
+            "value": "qualifiedDerivationOf",
+            "type": "label"
+          }
+        ],
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#Derivation",
+            "type": "iri"
+          }
+        ],
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "derivations",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#wasDerivedFrom",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "5",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        33.62,
+        705.83
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedReference",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedReference",
+        "en": "qualifiedReference"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity references Entity :e, then it can qualify how it references using qualifiedReference [ a prov:Reference;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "8",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        -47.52,
+        568.91
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasMusicEntityPart",
+        "en": "Has music entity part"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Specifies the relationship between a MusicEntity and its constituent parts or components. This property represents the connection between a MusicEntity and the individual parts or components that comprise it. It indicates that the MusicEntity is composed of or includes the mentioned parts, which may consist of specific sections, movements, instrumental or vocal parts, or other structural elements that contribute to the overall composition."
+      },
+      "domain": "11",
+      "range": "12",
+      "superproperty": [
+        "14"
+      ],
+      "inverse": "13",
+      "pos": [
+        197.94,
+        -696.88
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "baseIri": "http://www.w3.org/2002/07/owl",
+      "label": {
+        "IRI-based": "topObjectProperty"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "domain": "18",
+      "range": "18",
+      "subproperty": [
+        "19"
+      ],
+      "pos": [
+        -1194.47,
+        1121.37
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isGenreOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isGenreOf",
+        "en": "Is genre of"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasGenre.\" It specifies that a MusicGenre is attributed or associated with a MusicArtist."
+      },
+      "domain": "21",
+      "range": "22",
+      "inverse": "127",
+      "pos": [
+        1518.77,
+        1584.68
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isPartOfMusicEntity",
+        "en": "Is part of music entity"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasMusicEntityPart.\" It indicates that a MusicEntity part or component is part of a specific MusicEntity. This property establishes the connection from the MusicEntity part's perspective, indicating its inclusion or membership within the larger MusicEntity. The inverse property \"isPartOfMusicEntity\" allows for the modeling and description of the hierarchical or structural relationships between MusicEntity parts and the MusicEntities they belong to."
+      },
+      "domain": "25",
+      "range": "26",
+      "superproperty": [
+        "27"
+      ],
+      "pos": [
+        -84.91,
+        -786.42
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasSource",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasSource",
+        "en": "Has source"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "symmetric",
+        "reflexive",
+        "transitive",
+        "someValues"
+      ],
+      "domain": "31",
+      "range": "31",
+      "pos": [
+        957.89,
+        -607.8
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasTextFragment",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasTextFragment",
+        "en": "Has text part"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "allValues"
+      ],
+      "comment": {
+        "en": "Specifies that a Text has a TextFragment associated with it. This property represents the relationship between a Text, such as lyrics or written text, and its corresponding TextFragment. It indicates that the Text contains or includes the mentioned TextFragment, which represents a portion or segment of the overall Text."
+      },
+      "domain": "31",
+      "range": "37",
+      "superproperty": [
+        "14"
+      ],
+      "inverse": "38",
+      "pos": [
+        1089.05,
+        -815.1
+      ]
+    },
+    {
+      "id": "39",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isPartOfMusicEntity",
+        "en": "Is part of music entity"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasMusicEntityPart.\" It indicates that a MusicEntity part or component is part of a specific MusicEntity. This property establishes the connection from the MusicEntity part's perspective, indicating its inclusion or membership within the larger MusicEntity. The inverse property \"isPartOfMusicEntity\" allows for the modeling and description of the hierarchical or structural relationships between MusicEntity parts and the MusicEntities they belong to."
+      },
+      "domain": "31",
+      "range": "11",
+      "superproperty": [
+        "27"
+      ],
+      "pos": [
+        631.87,
+        -566.51
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasTextFragment",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasTextFragment",
+        "en": "Has text part"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "Specifies that a Text has a TextFragment associated with it. This property represents the relationship between a Text, such as lyrics or written text, and its corresponding TextFragment. It indicates that the Text contains or includes the mentioned TextFragment, which represents a portion or segment of the overall Text."
+      },
+      "domain": "31",
+      "range": "37",
+      "superproperty": [
+        "14"
+      ],
+      "inverse": "38",
+      "pos": [
+        1111.82,
+        -753.3
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "https://w3id.org/polifonia/ontology/core/title",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "title",
+        "en": "title"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "18",
+      "range": "16",
+      "pos": [
+        -910.99,
+        1243.46
+      ]
+    },
+    {
+      "id": "46",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#mentions",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "mentions",
+        "en": "mentions"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "expanded",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedMention",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "superproperty": [
+        "47"
+      ],
+      "pos": [
+        92.8,
+        532.11
+      ]
+    },
+    {
+      "id": "48",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#wasInspiredBy",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "wasInspiredBy",
+        "en": "wasinspiredBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An inspiration is the process of being stimulated by some existent entity to do, produce, or create some new entity. It consists getting from something  a new or creative idea that can be applied in the creation of something new.",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedInspiration",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "superproperty": [
+        "49"
+      ],
+      "pos": [
+        1.85,
+        432.6
+      ]
+    },
+    {
+      "id": "51",
+      "iri": "https://w3id.org/polifonia/ontology/core/name",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "name",
+        "en": "name"
+      },
+      "attributes": [
+        "external",
+        "datatype",
+        "someValues"
+      ],
+      "domain": "52",
+      "range": "50",
+      "pos": [
+        1791.54,
+        581.4
+      ]
+    },
+    {
+      "id": "54",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isPartOfMusicEntity",
+        "en": "Is part of music entity"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "allValues"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasMusicEntityPart.\" It indicates that a MusicEntity part or component is part of a specific MusicEntity. This property establishes the connection from the MusicEntity part's perspective, indicating its inclusion or membership within the larger MusicEntity. The inverse property \"isPartOfMusicEntity\" allows for the modeling and description of the hierarchical or structural relationships between MusicEntity parts and the MusicEntities they belong to."
+      },
+      "domain": "31",
+      "range": "11",
+      "superproperty": [
+        "27"
+      ],
+      "pos": [
+        598.24,
+        -652.58
+      ]
+    },
+    {
+      "id": "55",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAnnotation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "hasAnnotation",
+        "en": "Specifies the relation between a text or a text fragent and its annotation"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "56",
+      "range": "57",
+      "inverse": "58",
+      "pos": [
+        1535.41,
+        -353.9
+      ]
+    },
+    {
+      "id": "59",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "44",
+      "range": "11"
+    },
+    {
+      "id": "60",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "11",
+      "range": "42"
+    },
+    {
+      "id": "58",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAnnotationOf",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "isAnnotationOf",
+        "en": "isAnnotationOf"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Inverse property of \"hasAnnotation\" for specifing the relation between an annotation and the text r text fragment it is related to."
+      },
+      "domain": "57",
+      "range": "56",
+      "inverse": "55"
+    },
+    {
+      "id": "61",
+      "iri": "https://w3id.org/polifonia/ontology/core/isMemberOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "isMemberOf",
+        "en": "Is member of"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "allValues"
+      ],
+      "comment": {
+        "en": "The relation between an entity and a collection that the entity is member of."
+      },
+      "domain": "62",
+      "range": "63",
+      "pos": [
+        2056.05,
+        1266.22
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "https://w3id.org/polifonia/ontology/core/isMemberOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "isMemberOf",
+        "en": "Is member of"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "The relation between an entity and a collection that the entity is member of."
+      },
+      "domain": "62",
+      "range": "63",
+      "pos": [
+        2046.25,
+        1151.06
+      ]
+    },
+    {
+      "id": "65",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "44",
+      "range": "43"
+    },
+    {
+      "id": "66",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "44",
+      "range": "42"
+    },
+    {
+      "id": "67",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasinformationSource",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "hasinformationSource",
+        "en": "hasinformationSource"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "It specifies the relation between a qualified influence and the text, text fragment or annotation containing the information used to determine the influence."
+      },
+      "domain": "41",
+      "range": "68",
+      "pos": [
+        933.73,
+        -46.34
+      ]
+    },
+    {
+      "id": "69",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "43",
+      "range": "11"
+    },
+    {
+      "id": "70",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "42",
+      "range": "3",
+      "pos": [
+        -84.53,
+        239.15
+      ]
+    },
+    {
+      "id": "71",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "44",
+      "range": "3",
+      "pos": [
+        19.31,
+        155.82
+      ]
+    },
+    {
+      "id": "72",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "43",
+      "range": "3",
+      "pos": [
+        -41.58,
+        191.6
+      ]
+    },
+    {
+      "id": "73",
+      "iri": "http://www.w3.org/ns/prov#influenced",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "influenced",
+        "undefined": "influenced"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "annotations": {
+        "inverse": [
+          {
+            "identifier": "inverse",
+            "language": "undefined",
+            "value": "wasInfluencedBy",
+            "type": "label"
+          }
+        ],
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#Influence",
+            "type": "iri"
+          }
+        ],
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "agents-responsibility",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "expanded",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "74",
+      "inverse": "49",
+      "pos": [
+        421.61,
+        427.81
+      ]
+    },
+    {
+      "id": "76",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "9",
+      "range": "8",
+      "pos": [
+        -361.41,
+        565.72
+      ]
+    },
+    {
+      "id": "77",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "35",
+      "range": "8",
+      "pos": [
+        -339.87,
+        532.51
+      ]
+    },
+    {
+      "id": "78",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "11",
+      "range": "3",
+      "pos": [
+        255.18,
+        -74.13
+      ]
+    },
+    {
+      "id": "79",
+      "iri": "https://w3id.org/polifonia/ontology/core/text",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "text",
+        "en": "text"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "18",
+      "range": "23",
+      "pos": [
+        -1098.4,
+        993.21
+      ]
+    },
+    {
+      "id": "80",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "33",
+      "range": "41",
+      "pos": [
+        517.48,
+        497.19
+      ]
+    },
+    {
+      "id": "82",
+      "iri": "https://w3id.org/polifonia/ontology/core/isMemberOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "isMemberOf",
+        "en": "Is member of"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "The relation between an entity and a collection that the entity is member of."
+      },
+      "domain": "62",
+      "range": "22",
+      "inverse": "132",
+      "pos": [
+        1611.49,
+        1421.59
+      ]
+    },
+    {
+      "id": "83",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "34",
+      "range": "8",
+      "pos": [
+        -312.22,
+        508.18
+      ]
+    },
+    {
+      "id": "89",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#cites",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "cites",
+        "en": "cites"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "expanded",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedCitation",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "superproperty": [
+        "47"
+      ],
+      "pos": [
+        84.24,
+        241.86
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://www.w3.org/ns/prov#influencer",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "influencer",
+        "undefined": "influencer"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "undefined": "Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used."
+      },
+      "annotations": {
+        "editorialNote": [
+          {
+            "identifier": "editorialNote",
+            "language": "undefined",
+            "value": "This property and its subproperties are used in the same way as the rdf:object property, i.e. to reference the object of an unqualified prov:wasInfluencedBy or prov:influenced triple.",
+            "type": "label"
+          }
+        ],
+        "dm": [
+          {
+            "identifier": "dm",
+            "language": "undefined",
+            "value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence",
+            "type": "label"
+          }
+        ],
+        "editorsDefinition": [
+          {
+            "identifier": "editorsDefinition",
+            "language": "undefined",
+            "value": "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "41",
+      "range": "3",
+      "subproperty": [
+        "92"
+      ],
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        433.08,
+        294.4
+      ]
+    },
+    {
+      "id": "93",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedMention",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedMention",
+        "en": "qualifiedMention"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity mentions Entity :e, then it can qualify how it mentions using qualifiedMention [ a prov:Mention;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#mentions",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "9",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        -161.63,
+        385.25
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isPartOfMusicEntity",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isPartOfMusicEntity",
+        "en": "Is part of music entity"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasMusicEntityPart.\" It indicates that a MusicEntity part or component is part of a specific MusicEntity. This property establishes the connection from the MusicEntity part's perspective, indicating its inclusion or membership within the larger MusicEntity. The inverse property \"isPartOfMusicEntity\" allows for the modeling and description of the hierarchical or structural relationships between MusicEntity parts and the MusicEntities they belong to."
+      },
+      "domain": "31",
+      "range": "11",
+      "superproperty": [
+        "27"
+      ],
+      "inverse": "129"
+    },
+    {
+      "id": "27",
+      "iri": "https://w3id.org/polifonia/ontology/core/isPartOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "isPartOf",
+        "en": "is part of"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "transitive"
+      ],
+      "comment": {
+        "en": "A transitive relation expressing parthood between any entities, e.g. 'brain is a part of the human body'. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see 'componency'."
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "11",
+      "range": "11",
+      "subproperty": [
+        "38",
+        "13"
+      ],
+      "inverse": "130",
+      "pos": [
+        206.9,
+        -490.78
+      ]
+    },
+    {
+      "id": "96",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedCitation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedCitation",
+        "en": "qualifiedCitation"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity cites Entity :e, then it can qualify how it cites using qualifiedCitation [ a prov:Citation;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#cites",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "35",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        -140.09,
+        352.04
+      ]
+    },
+    {
+      "id": "97",
+      "iri": "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "wasDerivedFrom",
+        "undefined": "wasDerivedFrom"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "The more specific subproperties of prov:wasDerivedFrom should be used when applicable."
+      },
+      "annotations": {
+        "inverse": [
+          {
+            "identifier": "inverse",
+            "language": "undefined",
+            "value": "hadDerivation",
+            "type": "label"
+          }
+        ],
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "derivations",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "starting-point",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#qualifiedDerivation",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#Derivation",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "subproperty": [
+        "98",
+        "99"
+      ],
+      "superproperty": [
+        "49"
+      ],
+      "pos": [
+        248.17,
+        256.49
+      ]
+    },
+    {
+      "id": "101",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedBasis",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedBasis",
+        "en": "qualifiedBasis"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity isbasedOn Entity :e, then it can qualify how it was based on using qualifiedBasis [ a prov:Basis;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isBasedOn",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "88",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        237.79,
+        667.93
+      ]
+    },
+    {
+      "id": "102",
+      "iri": "https://w3id.org/polifonia/ontology/core/hasMember",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "hasMember",
+        "en": "Has member"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "The relation between a collection and a member of it."
+      },
+      "domain": "63",
+      "range": "62",
+      "inverse": "82",
+      "pos": [
+        2058,
+        1208.05
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "https://w3id.org/polifonia/ontology/core/hasPart",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "hasPart",
+        "en": "has part"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "transitive"
+      ],
+      "comment": {
+        "en": "A transitive relation expressing parthood between any entities, e.g. 'the human body has a brain as part'. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see 'componency'."
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "90",
+      "range": "91",
+      "subproperty": [
+        "10",
+        "103"
+      ],
+      "inverse": "27",
+      "pos": [
+        574.72,
+        -1059.64
+      ]
+    },
+    {
+      "id": "104",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasGenre",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasGenre",
+        "en": "Has genre"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Specifies the genre or genres associated with a MusicArtist. This property represents the relationship between a MusicArtist and the MusicGenre(s) that are attributed or associated with their artistic output or musical style. It indicates the genre(s) that best describe the musical genre(s) or genres in which the MusicArtist operates or specializes."
+      },
+      "domain": "22",
+      "range": "21",
+      "inverse": "20",
+      "pos": [
+        1390.52,
+        1647.8
+      ]
+    },
+    {
+      "id": "105",
+      "iri": "https://w3id.org/polifonia/ontology/core/nickname",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "nickname"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "18",
+      "range": "95",
+      "pos": [
+        -986.01,
+        1307.2
+      ]
+    },
+    {
+      "id": "106",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "26",
+      "range": "11",
+      "pos": [
+        87.15,
+        -569.24
+      ]
+    },
+    {
+      "id": "107",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "25",
+      "range": "11",
+      "pos": [
+        186.03,
+        -753.89
+      ]
+    },
+    {
+      "id": "108",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "62",
+      "range": "100",
+      "pos": [
+        1732.98,
+        1114.06
+      ]
+    },
+    {
+      "id": "109",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "32",
+      "range": "31",
+      "pos": [
+        1015.32,
+        -924.06
+      ]
+    },
+    {
+      "id": "110",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "5",
+      "pos": [
+        119.15,
+        985.32
+      ]
+    },
+    {
+      "id": "111",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "52",
+      "range": "75",
+      "pos": [
+        1386.32,
+        804.29
+      ]
+    },
+    {
+      "id": "112",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "100",
+      "range": "75",
+      "pos": [
+        1371.98,
+        907.78
+      ]
+    },
+    {
+      "id": "113",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasSource",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasSource",
+        "en": "Has source"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "symmetric",
+        "reflexive",
+        "transitive"
+      ],
+      "domain": "31",
+      "range": "31",
+      "pos": [
+        1007.79,
+        -741.13
+      ]
+    },
+    {
+      "id": "114",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "influenceInformation",
+        "en": "influence information"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Specifies additional infromation about a qualified influence."
+      },
+      "domain": "41",
+      "range": "0",
+      "pos": [
+        897.24,
+        197.36
+      ]
+    },
+    {
+      "id": "38",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isTextFragmentOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isTextFragmentOf",
+        "en": "Is text fragment of"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasTextFragment.\" It indicates that a TextFragment is associated with a specific Text. This property establishes the connection from the TextFragment's perspective, indicating that it is a fragment or segment of the larger Text."
+      },
+      "domain": "37",
+      "range": "31",
+      "superproperty": [
+        "27"
+      ],
+      "inverse": "103"
+    },
+    {
+      "id": "115",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedInspiration",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedInspiration",
+        "en": "qualifiedInspiration"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity wasInspiredBy Entity :e, then it can qualify how it was inspired using qualifiedInpiration [ a prov:Inspiration;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#wasInspiredBy",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "53",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        23.51,
+        644.54
+      ]
+    },
+    {
+      "id": "103",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasTextFragment",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasTextFragment",
+        "en": "Has text part"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Specifies that a Text has a TextFragment associated with it. This property represents the relationship between a Text, such as lyrics or written text, and its corresponding TextFragment. It indicates that the Text contains or includes the mentioned TextFragment, which represents a portion or segment of the overall Text."
+      },
+      "domain": "31",
+      "range": "37",
+      "superproperty": [
+        "14"
+      ],
+      "inverse": "38",
+      "pos": [
+        1068.76,
+        -870.15
+      ]
+    },
+    {
+      "id": "98",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAdaptationOf",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "isAdaptationOf",
+        "en": "isAdaptationOf"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "expanded",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAdaptation",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "superproperty": [
+        "97"
+      ],
+      "pos": [
+        142.63,
+        223.63
+      ]
+    },
+    {
+      "id": "116",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "63",
+      "range": "52",
+      "pos": [
+        1742.73,
+        923.01
+      ]
+    },
+    {
+      "id": "117",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "62",
+      "range": "22",
+      "pos": [
+        1600.1,
+        1362.62
+      ]
+    },
+    {
+      "id": "118",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "87",
+      "range": "5",
+      "pos": [
+        -231.43,
+        856.34
+      ]
+    },
+    {
+      "id": "119",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "8",
+      "range": "33",
+      "pos": [
+        43.42,
+        768.21
+      ]
+    },
+    {
+      "id": "120",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "5",
+      "range": "33",
+      "pos": [
+        124.56,
+        905.13
+      ]
+    },
+    {
+      "id": "121",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "63",
+      "range": "22",
+      "pos": [
+        1593.12,
+        1274.44
+      ]
+    },
+    {
+      "id": "122",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "53",
+      "range": "33",
+      "pos": [
+        114.45,
+        843.84
+      ]
+    },
+    {
+      "id": "123",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasAuthor",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "hasAuthor",
+        "en": "Has author"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Specifies the authoriality of an Agent over the involved entity (InformationObject)."
+      },
+      "domain": "3",
+      "range": "86",
+      "inverse": "1"
+    },
+    {
+      "id": "92",
+      "iri": "http://www.w3.org/ns/prov#entity",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "entity",
+        "undefined": "entity"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "annotations": {
+        "editorialNote": [
+          {
+            "identifier": "editorialNote",
+            "language": "en",
+            "value": "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple.",
+            "type": "label"
+          }
+        ],
+        "editorsDefinition": [
+          {
+            "identifier": "editorsDefinition",
+            "language": "en",
+            "value": "The prov:entity property references an prov:Entity which influenced a resource. This property applies to an prov:EntityInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent.",
+            "type": "label"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "33",
+      "range": "3",
+      "superproperty": [
+        "19"
+      ],
+      "pos": [
+        243.2,
+        587.74
+      ]
+    },
+    {
+      "id": "49",
+      "iri": "http://www.w3.org/ns/prov#wasInfluencedBy",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "wasInfluencedBy",
+        "undefined": "wasInfluencedBy"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties should be used when applicable.",
+        "undefined": "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
+      },
+      "annotations": {
+        "inverse": [
+          {
+            "identifier": "inverse",
+            "language": "undefined",
+            "value": "influenced",
+            "type": "label"
+          }
+        ],
+        "editorialNote": [
+          {
+            "identifier": "editorialNote",
+            "language": "en",
+            "value": "The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .\n\nSubproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.\n\nprov:wasInfluencedBy should not be used without also using one of its subproperties. \n",
+            "type": "label"
+          }
+        ],
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#Influence",
+            "type": "iri"
+          }
+        ],
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "agents-responsibility",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#Influence",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#qualifiedInfluence",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "74",
+      "range": "3",
+      "subproperty": [
+        "48",
+        "97",
+        "47"
+      ],
+      "inverse": "73"
+    },
+    {
+      "id": "125",
+      "iri": "https://w3id.org/polifonia/ontology/core/name",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "name",
+        "en": "name"
+      },
+      "attributes": [
+        "external",
+        "datatype",
+        "someValues"
+      ],
+      "domain": "22",
+      "range": "126",
+      "pos": [
+        1217.97,
+        1562.59
+      ]
+    },
+    {
+      "id": "127",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasGenre",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasGenre",
+        "en": "Has genre"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "Specifies the genre or genres associated with a MusicArtist. This property represents the relationship between a MusicArtist and the MusicGenre(s) that are attributed or associated with their artistic output or musical style. It indicates the genre(s) that best describe the musical genre(s) or genres in which the MusicArtist operates or specializes."
+      },
+      "domain": "22",
+      "range": "21",
+      "inverse": "20"
+    },
+    {
+      "id": "128",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/isGenreOf",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "isGenreOf",
+        "en": "Is genre of"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "Inverse relationship of \"hasGenre.\" It specifies that a MusicGenre is attributed or associated with a MusicArtist."
+      },
+      "domain": "21",
+      "range": "22",
+      "pos": [
+        1459.17,
+        1614.43
+      ]
+    },
+    {
+      "id": "129",
+      "iri": "https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart",
+      "baseIri": "https://w3id.org/polifonia/ontology/music-meta",
+      "label": {
+        "IRI-based": "hasMusicEntityPart",
+        "en": "Has music entity part"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "Specifies the relationship between a MusicEntity and its constituent parts or components. This property represents the connection between a MusicEntity and the individual parts or components that comprise it. It indicates that the MusicEntity is composed of or includes the mentioned parts, which may consist of specific sections, movements, instrumental or vocal parts, or other structural elements that contribute to the overall composition."
+      },
+      "domain": "11",
+      "range": "31",
+      "superproperty": [
+        "14"
+      ],
+      "inverse": "13",
+      "pos": [
+        614.53,
+        -609.33
+      ]
+    },
+    {
+      "id": "130",
+      "iri": "https://w3id.org/polifonia/ontology/core/hasPart",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "hasPart",
+        "en": "has part"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "transitive",
+        "someValues"
+      ],
+      "comment": {
+        "en": "A transitive relation expressing parthood between any entities, e.g. 'the human body has a brain as part'. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see 'componency'."
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.ontologydesignpatterns.org/cp/owl/partof.owl",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "11",
+      "range": "11",
+      "subproperty": [
+        "10",
+        "103"
+      ],
+      "inverse": "27"
+    },
+    {
+      "id": "131",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "43",
+      "range": "42"
+    },
+    {
+      "id": "132",
+      "iri": "https://w3id.org/polifonia/ontology/core/hasMember",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "hasMember",
+        "en": "Has member"
+      },
+      "attributes": [
+        "external",
+        "object",
+        "someValues"
+      ],
+      "comment": {
+        "en": "The relation between a collection and a member of it."
+      },
+      "domain": "22",
+      "range": "62",
+      "inverse": "82"
+    },
+    {
+      "id": "133",
+      "iri": "https://w3id.org/polifonia/ontology/core/name",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "name",
+        "en": "name"
+      },
+      "attributes": [
+        "external",
+        "datatype",
+        "allValues"
+      ],
+      "domain": "22",
+      "range": "124",
+      "pos": [
+        1293.89,
+        1603.27
+      ]
+    },
+    {
+      "id": "134",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAdaptation",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedAdaptation",
+        "en": "qualifiedAdaptation"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity isAdaptationOf Entity :e, then it can qualify how it was adapted using qualifiedAdaptation [ a prov:Adaptation;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isAdaptationOf",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "87",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        -112.79,
+        538.96
+      ]
+    },
+    {
+      "id": "135",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAllusion",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "qualifiedAllusion"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "If this Entity alludesTo Entity :e, then it can qualify how it alludes to using qualifiedAllusion [ a prov:Allusion;  prov:entity :e; :foo :bar ]."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#alludesTo",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "34",
+      "superproperty": [
+        "6"
+      ],
+      "pos": [
+        -112.44,
+        327.71
+      ]
+    },
+    {
+      "id": "99",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#isBasedOn",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "isBasedOn",
+        "en": "isBasedOn"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "expanded",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedBasis",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "superproperty": [
+        "97"
+      ],
+      "pos": [
+        293.03,
+        317.94
+      ]
+    },
+    {
+      "id": "136",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceInformationSource",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "influenceInformationSource",
+        "en": "influence information source"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Specifies the source of the information about the qualified influence between the involved entities intended as the webpage containing the involved information"
+      },
+      "domain": "41",
+      "range": "15",
+      "pos": [
+        876.43,
+        131.51
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.w3.org/ns/prov#qualifiedInfluence",
+      "baseIri": "http://www.w3.org/ns/prov",
+      "label": {
+        "IRI-based": "qualifiedInfluence",
+        "undefined": "qualifiedInfluence"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "comment": {
+        "en": "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."
+      },
+      "annotations": {
+        "sharesDefinitionWith": [
+          {
+            "identifier": "sharesDefinitionWith",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#Influence",
+            "type": "iri"
+          }
+        ],
+        "inverse": [
+          {
+            "identifier": "inverse",
+            "language": "undefined",
+            "value": "qualifiedInfluenceOf",
+            "type": "label"
+          }
+        ],
+        "component": [
+          {
+            "identifier": "component",
+            "language": "undefined",
+            "value": "derivations",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov-o#",
+            "type": "iri"
+          }
+        ],
+        "unqualifiedForm": [
+          {
+            "identifier": "unqualifiedForm",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/prov#wasInfluencedBy",
+            "type": "iri"
+          }
+        ],
+        "category": [
+          {
+            "identifier": "category",
+            "language": "undefined",
+            "value": "qualified",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "41",
+      "subproperty": [
+        "96",
+        "101",
+        "4",
+        "7",
+        "134",
+        "93",
+        "115",
+        "135"
+      ],
+      "pos": [
+        415.79,
+        245.47
+      ]
+    },
+    {
+      "id": "137",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#alludesTo",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "alludesTo",
+        "en": "alludesTo"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "category": [
+          {
+            "identifier": "category",
+            "language": "en",
+            "value": "expanded",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedAllusion",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "superproperty": [
+        "47"
+      ],
+      "pos": [
+        18.14,
+        305.42
+      ]
+    },
+    {
+      "id": "138",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#influenceSourceText",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "influenceSourceText",
+        "en": "influence source text"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Specifies the source text in which the qualified influence can be found."
+      },
+      "domain": "41",
+      "range": "28",
+      "pos": [
+        882.7,
+        264.8
+      ]
+    },
+    {
+      "id": "47",
+      "iri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references",
+      "baseIri": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl",
+      "label": {
+        "IRI-based": "references",
+        "en": "references"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "The more specific subproperties of references should be used when applicable."
+      },
+      "annotations": {
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A reference is any kind of direct or indirect mention, allusion, or citation to some external entity with respect to the referencing one.",
+            "type": "label"
+          }
+        ],
+        "qualifiedForm": [
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedReference",
+            "type": "iri"
+          },
+          {
+            "identifier": "qualifiedForm",
+            "language": "undefined",
+            "value": "https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Reference",
+            "type": "iri"
+          }
+        ]
+      },
+      "domain": "3",
+      "range": "3",
+      "subproperty": [
+        "89",
+        "137",
+        "46"
+      ],
+      "superproperty": [
+        "49"
+      ],
+      "pos": [
+        196.6,
+        229.06
+      ]
+    },
+    {
+      "id": "139",
+      "iri": "https://w3id.org/polifonia/ontology/core/name",
+      "baseIri": "https://w3id.org/polifonia/ontology/core",
+      "label": {
+        "IRI-based": "name",
+        "en": "name"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "84",
+      "range": "29",
+      "pos": [
+        747.01,
+        1594.9
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-81-11-0",
+      "domain": "81",
+      "range": "11",
+      "pos": [
+        414.11,
+        -787.91
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-81-31-1",
+      "domain": "81",
+      "range": "31",
+      "pos": [
+        662.35,
+        -881.48
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-74-75-0",
+      "domain": "74",
+      "range": "75",
+      "pos": [
+        896.91,
+        736.89
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-74-3-1",
+      "domain": "74",
+      "range": "3",
+      "pos": [
+        402.37,
+        481.2
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-84-75-0",
+      "domain": "84",
+      "range": "75",
+      "pos": [
+        999.81,
+        1174.02
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-84-22-1",
+      "domain": "84",
+      "range": "22",
+      "pos": [
+        1108.16,
+        1422.82
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-85-75-0",
+      "domain": "85",
+      "range": "75",
+      "pos": [
+        885.14,
+        814.39
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-85-3-1",
+      "domain": "85",
+      "range": "3",
+      "pos": [
+        397.09,
+        555.15
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-75-0",
+      "domain": "86",
+      "range": "75",
+      "pos": [
+        918.56,
+        943.26
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-22-1",
+      "domain": "86",
+      "range": "22",
+      "pos": [
+        1026.92,
+        1192.05
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-68-31-0",
+      "domain": "68",
+      "range": "31",
+      "pos": [
+        1010.62,
+        -511.93
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-68-57-1",
+      "domain": "68",
+      "range": "57",
+      "pos": [
+        1425.45,
+        -250.43
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-68-37-2",
+      "domain": "68",
+      "range": "37",
+      "pos": [
+        1234.55,
+        -594.02
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-90-11-0",
+      "domain": "90",
+      "range": "11",
+      "pos": [
+        363.44,
+        -786.88
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-90-31-1",
+      "domain": "90",
+      "range": "31",
+      "pos": [
+        611.68,
+        -880.45
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-91-11-0",
+      "domain": "91",
+      "range": "11",
+      "pos": [
+        569.38,
+        -809.47
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-91-31-1",
+      "domain": "91",
+      "range": "31",
+      "pos": [
+        817.63,
+        -903.04
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-91-37-2",
+      "domain": "91",
+      "range": "37",
+      "pos": [
+        1041.56,
+        -985.12
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-56-31-0",
+      "domain": "56",
+      "range": "31",
+      "pos": [
+        1120.58,
+        -615.4
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-56-37-1",
+      "domain": "56",
+      "range": "37",
+      "pos": [
+        1344.51,
+        -697.49
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-12-11-0",
+      "domain": "12",
+      "range": "11",
+      "pos": [
+        154.81,
+        -688.62
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-12-31-1",
+      "domain": "12",
+      "range": "31",
+      "pos": [
+        574.36,
+        -811.36
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-2-75-0",
+      "domain": "2",
+      "range": "75",
+      "pos": [
+        1008.2,
+        1118.99
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-2-22-1",
+      "domain": "2",
+      "range": "22",
+      "pos": [
+        1116.55,
+        1367.79
+      ]
+    }
+  ]
+}
