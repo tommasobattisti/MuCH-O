@@ -242,10 +242,10 @@
                     <h3 class="mucho-h3">Population of the mucho-gustore Knowledge Graph</h3>
                     <p class="paragraph">The mucho-gustore Knowledge Graph has been created and populated using <a href="https://rdflib.readthedocs.io/en/stable/" target="_blank" class="in-text-a">RDFLib</a> and reusing information from the dictionaries storing data related to the song, the annotations, and the related entities. URIs representing classes and properties have been defines in a Python file external to the invoved notebook and named <a href="https://github.com/tommasobattisti/MuCH-O/blob/main/documentation/URIs.py" target="_blank" class="in-text-a">URIs.py</a>. All the variables contained in this file and referencing the URIs of classes and properties have been imported at the beginning of the population process along with theaforementioned python library.</p>
                 </div>
-                <div class="flex flex-row space-x-10 justify-start">
-                    <button id="pop-kg-btn" class="kg-btn kg-mucho-btn-active">Population</button>
-                    <button id="ttl-kg-btn" class="kg-btn mucho-btn">Serialisation</button>
-                    <button id="viz-kg-btn" class="kg-btn mucho-btn">Visualisation</button>
+                <div class="flex flex-row flex-wrap w-full justify-start items-baseline">
+                    <button id="pop-kg-btn" class="kg-btn kg-mucho-btn-active mr-10">Population</button>
+                    <button id="ttl-kg-btn" class="kg-btn mucho-btn mr-10">Serialisation</button>
+                    <button id="viz-kg-btn" class="kg-btn mucho-btn mr-10 mt-5 md:mt-0">Visualisation</button>
                 </div>
                 <div id="kg-pop-div" class="b-black-border h-fit">
                     <script src="https://gist.github.com/tommasobattisti/5da9b69ee11e252075990671667a2930.js"></script>

@@ -8,6 +8,7 @@ body {
 }
 
 .mucho-btn {
+    height: fit-content;
     width: fit-content;
     padding: 0.5rem 1rem;
     transition: all 0.2s ease;
@@ -21,6 +22,7 @@ body {
 }
 
 .mucho-btn-active, .kg-mucho-btn-active {
+    height: fit-content;
     width: fit-content;
     padding: 0.5rem 1rem;
     transition: all 0.2s ease;
