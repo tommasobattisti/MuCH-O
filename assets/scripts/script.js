@@ -22,6 +22,43 @@ $(document).ready(function() {
         }
     });
 
+    // KG buttons
+    $('#ttl-kg-btn').click(() => {
+        if ($('#ttl-ontology-btn').hasClass('kg-mucho-btn-active')) {
+        } else {
+            $('#viz-kg-btn').removeClass('kg-mucho-btn-active').addClass('mucho-btn');
+            $('#pop-kg-btn').removeClass('kg-mucho-btn-active').addClass('mucho-btn');
+            $('#ttl-kg-btn').removeClass('mucho-btn').addClass('kg-mucho-btn-active');
+            $('#kg-pop-div').addClass('hidden');
+            $('#kg-viz-div').addClass('hidden');
+            $('#kg-ttl-div').removeClass('hidden');
+        }
+    });
+
+    $('#viz-kg-btn').click(() => {
+        if ($('#viz-ontology-btn').hasClass('kg-mucho-btn-active')) {
+        } else {
+            $('#ttl-kg-btn').removeClass('kg-mucho-btn-active').addClass('mucho-btn');
+            $('#pop-kg-btn').removeClass('kg-mucho-btn-active').addClass('mucho-btn');
+            $('#viz-kg-btn').removeClass('mucho-btn').addClass('kg-mucho-btn-active');
+            $('#kg-ttl-div').addClass('hidden');
+            $('#kg-pop-div').addClass('hidden');
+            $('#kg-viz-div').removeClass('hidden');
+        }
+    });
+
+    $('#pop-kg-btn').click(() => {
+        if ($('#pop-ontology-btn').hasClass('kg-mucho-btn-active')) {
+        } else {
+            $('#ttl-kg-btn').removeClass('kg-mucho-btn-active').addClass('mucho-btn');
+            $('#viz-kg-btn').removeClass('kg-mucho-btn-active').addClass('mucho-btn');
+            $('#pop-kg-btn').removeClass('mucho-btn').addClass('kg-mucho-btn-active');
+            $('#kg-ttl-div').addClass('hidden');
+            $('#kg-viz-div').addClass('hidden');
+            $('#kg-pop-div').removeClass('hidden');
+        }
+    });
+
     // Smooth scrolling to anchor links on the same page
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

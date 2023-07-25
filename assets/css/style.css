@@ -20,7 +20,7 @@ body {
     transform: translate(-5px, 0px);
 }
 
-.mucho-btn-active {
+.mucho-btn-active, .kg-mucho-btn-active {
     width: fit-content;
     padding: 0.5rem 1rem;
     transition: all 0.2s ease;

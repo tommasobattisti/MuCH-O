@@ -34,7 +34,7 @@
 }
 
 .mucho-h3 {
-    @apply text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.03em] pb-5;
+    @apply text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.04em] pb-5;
 }
 
 .paragraph {
