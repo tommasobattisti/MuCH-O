@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $('.gist-file').addClass('padding-0').addClass("margin-0") //.addClass("b-black-border")
+
     // Smooth scrolling to anchor links on the same page
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

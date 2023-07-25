@@ -75,8 +75,12 @@
         <p class="paragraph sm:text-center">No es mucho, pero es MuCH-O</p>
     </div>
 
-    <main class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] my-20">
-        <section id="project-section-main" class="flex flex-col space-y-10">
+
+    <!--MAIN-->
+
+
+    <main>
+        <section id="project-section-main" class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] py-40 border-b-[3px] border-[#161616]">
             <div>
                 <h2 class="m-mucho-h2 montserrat">The project</h2>
                 <p class="paragraph">This projects started with specific competency questions for creafting an ontology able to map connections between a song lyrics and interpretations and other cultural heritage objects and agents.
@@ -86,60 +90,132 @@
             </div>
             <div>
                 <h3 class="mucho-h3">Competency questions</h3>
-                <p class="paragraph">The project has been shaped by the compenecy questions stated before starting the knowledge extraction process and the ontology development. in this way, the project development started with a clear vision of the data and the modelling structure needed for answering efficiently and pursuing the projects' objectives.</p>
-                <p class="paragraph">Knowledge extraction has been performed with the intent of proposing a case study using a single song and its lyrics' annotations as starting point: "Resistance" by Muse. The following questions have been formulated starting from these ideas:</p>
-                <ul class="pt-5">
-                    <li>Which entity/ies are referenced by the song?</li>
-                    <li>Which are the annotations that have been identified to be referencing the above entity and what do they contain?</li>
-                    <li>Which are the lyrics fragments that have been annotated with the above annotation (therefore referencing in some way the involved entity)?</li>
-                    <li>Which entities have been influenced in some way by the entity referenced by the song?</li>
-                    <li>Which Cultural heritage objects are related to the entity referenced by the song (and therefore to the song with a two step connection) and by what kind of relation?</li>
-                    <li>From where was each of these relations extracted? What does the source text say about them?</li>
-                </ul>
+                <div class="flex flex-col space-y-5 lg:space-y-0 lg:flex-row-reverse lg:justify-between">
+                    <div class="lg:w-[47.5%] h-fit">
+                        <p class="paragraph">The project has been shaped by the compenecy questions stated before starting the knowledge extraction process and the ontology development. in this way, the project development started with a clear vision of the data and the modelling structure needed for answering efficiently and pursuing the projects' objectives.</p>
+                        <p class="paragraph">Knowledge extraction has been performed with the intent of proposing a case study using a single song and its lyrics' annotations as starting point: "Resistance" by Muse. The questions have been formulated starting from these ideas.</p>
+                    </div>
+                    <div class="lg:w-[47.5%] black-border">
+                        <ul>
+                            <li class="pt-0">Which entity/ies are referenced by the song?</li>
+                            <li>Which annotations have been identified to be referencing the above entity and what do they contain?</li>
+                            <li>Which are the lyrics' fragments that have been annotated with the above annotation?</li>
+                            <li>Which entities have been influenced in some way by the entity referenced by the song?</li>
+                            <li>Which Cultural heritage objects are related to the entity referenced by the song and by what kind of relation?</li>
+                            <li>From where was each of these relations extracted? What does the source text say about them?</li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
+
         <!-- KE SECTION -->
-        <section id="ke-section-main" class="flex flex-col space-y-10">
+        <section id="ke-section-main" class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] py-40 border-b-[3px] border-[#161616]">
             <div>
                 <h2 class="m-mucho-h2 montserrat">Knowledge Extraction</h2>
                 <p class="paragraph">The knoweledge extraction process has been carried out using Python3 and different libraries for data extraction, sentence similarity, synsets similarity, candidate entity ranking, knowledge graph population, etc.</p>
-                <p class="paragraph">The whole process has been performed using a <a class="in-text-a" target="_blank" href="https://github.com/tommasobattisti/MuCH-O/blob/main/documentation/workflow.ipynb">Jupyter Notebook</a> and, therefore, it can be analysed completely.</p>
-                <p class="paragraph">Thus, this section aims at providing just an overview of the mentioned process.</p>
+                <p class="paragraph">The whole process has been performed using a <a class="in-text-a" target="_blank" href="https://github.com/tommasobattisti/MuCH-O/blob/main/documentation/workflow.ipynb">Jupyter Notebook</a> and, therefore, it can be fully analysed. This section provides an overvew of the process including the notebook snippets for a better in-depth analysis.</p>
             </div>
-            <div class="flex flex-col space-y-5">
-                <div>
-                    <h3 class="mucho-h3">00. Imports</h3>
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">00. Imports</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/751ce39792d2a3bfd66e1753ed17ec6e.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">For what concerns the imported libraries and packages, <a href="https://pypi.org/project/requests/" target="_blank" class="in-text-a">requests</a> has been used for performing general API requests to Spotify and Wikidata, while <a href="https://pypi.org/project/musicbrainzngs/" target="_blank" class="in-text-a">musicbrainzngs</a> has been used for retrieving song data from MusicBrainz, and <a href="https://pypi.org/project/lyricsgenius/" target="_blank" class="in-text-link">lyricsgenius</a> for connecting with the Gesius' APIs. Moreover, also <a href="https://pypi.org/project/qwikidata/" target="_blank" class="in text-a"> qwikidata</a> and <a href="https://pypi.org/project/SPARQLWrapper/" target="_blank" class="in-text-a"> SPARQLWrapper</a> have been used for connceting directly with the Wikidata and DBpedia SPARQ endpoints.</p>
+                        <p class="paragraph"><a href="https://www.nltk.org/" target="_blank" class="in-text-a">nltk</a> and <a href="https://spacy.io/" target="_blank" class="in-text-a">spaCy</a> have been imported as main libraries for NLP tasks including the ones dealing with <a class="in-text-a" target="_blank" href="https://www.nltk.org/howto/wordnet.html">WordNet synsets</a>. Finally, <a href="https://pypi.org/project/beautifulsoup4/" target="_blank" class="in-text-a">BeautifulSoup4</a> has been imported for scraping Wikipedia pages, while <a href="https://github.com/dsdanielpark/Bard-API" target="_blank" class="in-text-a">Bard-API</a> helped in sending prompts to Google Bard for relation extraction tasks and <a href="https://pypi.org/project/sentence-transformers/" target="_blank" class="in-text-a">sentence_transformers</a> for computing sentence similarity scores.</p>
+                    </div>
                 </div>
-                <script src="https://gist.github.com/tommasobattisti/751ce39792d2a3bfd66e1753ed17ec6e.js"></script>
             </div>
             <div>
                 <h3 class="mucho-h3">01. Getting data</h3>
-                <p class="paragraph"></p>
-                <script src="https://gist.github.com/tommasobattisti/8f411c2d834f40aecfd56ecae905f667.js"></script>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">The starting point is the song ID that can be retrieved by either right-clicking on the track in the Spotify app and selecting “Share”, “Copy Song Link”, or directly from the URL of the <a href="https://open.spotify.com/track/1C2QJNTmsTxCDBuIgai8QV" target="_blank" class="in-text-a">song's page</a>. With this ID it is possible to connect with the Spotify APIs for retrieving enough data for the song, the artists performing it, etc. From Spotify, data such as song external IDs, artists, and genres have been extracted.</p>
+                        <p class="paragraph">In the notebook, also information that has not been used for the project has been extracted for the provision of an example about the potential amount of downloadable data. For example, lyrics, comments, description, and annotations have been retrieved, while only the first and the last have been used for extracting extra information from text given their reliability.</p>
+                        <p class="paragraph">From MusicBrainz, additional information about the artists and the recording have been stored in the dictionary containing the song's information.</p>
+                    </div>
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/8f411c2d834f40aecfd56ecae905f667.js"></script>
+                    </div>
+                </div>
+                
             </div>
             <div>
                 <h3 class="mucho-h3">02. Information extraction from song annotation</h3>
-                <script src="https://gist.github.com/tommasobattisti/5248497921f3b1f227577157614bc296.js"></script>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">The information extraction part dealt with the Named Entity Recognition (NER). In particular, spaCy has been used for extracting named entities from the song annotations. For each entity extracted, the focus was dedicated onty towards entities recognized as being "work of art" and "person".</p>
+                        <p class="paragraph">Once stored the entities in a dictionary, another iteration over the annotations enabled the storing of the number of occurrences of the named entity string in the texts. Also, the number of the annotations in which the references appeared haeve been retrieved and stored.</p>
+                    </div>
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/5248497921f3b1f227577157614bc296.js"></script>
+                    </div>
+                </div>
             </div>
             <div>
                 <h3 class="mucho-h3">03. Wikidata candidate entities retrieval</h3>
-                <script src="https://gist.github.com/tommasobattisti/c32ec4972ff1d07a97c4c2a38b3d9b65.js"></script>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">In this phase, the main goal is to understand which are the existent entities cited and extracted as "works of art" in the previous step. Candidate entities are searched among Wikidata entities by means of their label. A connection with the <a href="https://www.mediawiki.org/wiki/Wikibase/API/en" target="_blank" class="in-text-a">Wikidata API</a> was performed to get possible results according to the match between the string of the Named Entity recognised in the annotations and the Wikidata entities' labels.</p>
+                        <p class="paragraph">The resusts obtained as a list of dictionaries representing the entities was filtered according to a simple principle: since the interest is on works of art, the retrieved entities that are not of type "creative work" or any subclass applied recursively were removed from the list. Therefore, the final candidates are stored in a list of creative works ordered according to Wikidata relevance.</p>
+                    </div>
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/c32ec4972ff1d07a97c4c2a38b3d9b65.js"></script>
+                    </div>
+                </div>
             </div>
             <div>
                 <h3 class="mucho-h3">04. Candidates ranking and disambiguation with Wikidata and Sentence-BERT</h3>
-                <script src="https://gist.github.com/tommasobattisti/12cc2db181461afe11d75b2452833902.js"></script>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">Here, the objectives were: 1) understanding whether the Named Entities retrieved are actually works of art mentioned in the song's annotation or just an error given by the NER model, and 2) in the first scenario, ranking the candidate entities and selecting the correct one according to probability.</p>
+                        <p class="paragraph">With these aims, a custom score was compued for each candidate entity and for each work of art involved. The score is the sum of the following sub-scores:</p>
+                        <ul>
+                            <li>Relevance given by the order of the results returned by the Wikidata API</li>
+                            <li>Number of Named Entities recognized as "person" in the annotations that are also objects of Wikidata triples having the candidate entity as subject</li>
+                            <li>Number of Named Entities recognized as "person" in the annotations and occurring in the Wikidata description of the candidate entity</li>
+                            <li>A dependency score assigning a value of -1 to each candidate entity that is a derivative work of another candidate entity according to Wikidata</li>
+                            <li>A score computed using Sentence-BERT to assess the similarity between the sentences in which the Named Entity appeared in the annotations and the Wikidata entity description</li>
+                        </ul>
+                        <p class="paragraph">If the final scores lies below a certain threshold, the candidates are removed for being not relevant. Among the others, only the one with the hughest score is selected.</p>
+                    </div>
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/12cc2db181461afe11d75b2452833902.js"></script>
+                    </div>
+                </div>
             </div>
             <div>
                 <h3 class="mucho-h3">05. Searching for links to other entities on Wikipedia and DBpedia</h3>
-                <script src="https://gist.github.com/tommasobattisti/b56ea73821c61e06cb7ed5bbe59bf943.js"></script>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">Once selected the entity with the highest score, the Wikipedia URL is taken from Wikidata. The URL will serve as "ID" for retrieving the DBpedia entity representing the page. From here, the existent links to other Wikipedia pages were extracted. Among these, only the ones related to creative works or artists were kept.</p>
+                        <p class="paragraph">With the BeautifulSoup4 library, the Wikipedia page was scraped but only considering subsections related to cultural influence or adaptations of the selected candidate. From here, all the sentences containing the aforementioned links were stored.</p>
+                        <p class="paragraph">Each link was also stored in a dictiornay where other values such as internal IDs, the DBpedia entity they refer to, their DBpedia class, etc. were stored. The internal id was used for facilitating the process of relation extraction by replacing the orinial HTML anchor tag.</p>
+                    </div>
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/b56ea73821c61e06cb7ed5bbe59bf943.js"></script>
+                    </div>
+                </div>
             </div>
             <div>
                 <h3 class="mucho-h3">06. Relation extraction from plain text using Google Bard and WordNet</h3>
-                <script src="https://gist.github.com/tommasobattisti/8d01906804de5bc07d3f9cc00020160d.js"></script>
+                
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%]">
+                        <p class="paragraph">The Google Bard LLM was used for extracting the rlationships between the selected candidate entity and the other entities retrieved using DBpedia and present in the selected Wikipedia pieces of text. In particular, the prompt consisted in asking to extract the relations and return the result as a pandas dataframe able to represent the connections.</p>
+                        <p class="paragraph">Since the model return any kind of relation between th einvolved entities, it was necessary to trace back each relation to a standard construct (e.g., "based on", "inspired by", "adapted from", etc.). Half of the work was done by using regular expressions, while the rest involved WordNet synsets: for each relation extracted, the verb was isolated and every synset of that verb was compared with the synsets of each of the standard constructs' verbs to compute their similarity. the highest similarity assigned the construct to the relation extracted if the score was above a certain treshold. Otherwise, the relation was classified as of "general influence".</p>
+                    </div>
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/8d01906804de5bc07d3f9cc00020160d.js"></script>
+                    </div>
+                </div>
             </div>
             
-        </section>
+        </section id="ontology-section-main" class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] py-40 border-b-[3px] border-[#161616]">
         <div>
             <h2 class="m-mucho-h2 montserrat">Onotlogy and Knowledge Graph population</h2>
         </div>
