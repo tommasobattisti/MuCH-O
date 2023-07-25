@@ -2,6 +2,26 @@ $(document).ready(function() {
 
     $('.gist-file').addClass('padding-0').addClass("margin-0") //.addClass("b-black-border")
 
+    $('#viz-ontology-btn').click(() => {
+        if ($('#viz-ontology-btn').hasClass('mucho-btn-active')) {
+        } else {
+            $('#owl-ontology-btn').removeClass('mucho-btn-active').addClass('mucho-btn');
+            $('#viz-ontology-btn').removeClass('mucho-btn').addClass('mucho-btn-active');
+            $('#ontology-owl-div').addClass('hidden');
+            $('#ontology-viz-div').removeClass('hidden');
+        }
+    });
+
+    $('#owl-ontology-btn').click(() => {
+        if ($('#owl-ontology-btn').hasClass('mucho-btn-active')) {
+        } else {
+            $('#viz-ontology-btn').removeClass('mucho-btn-active').addClass('mucho-btn');
+            $('#owl-ontology-btn').removeClass('mucho-btn').addClass('mucho-btn-active');
+            $('#ontology-viz-div').addClass('hidden');
+            $('#ontology-owl-div').removeClass('hidden');
+        }
+    });
+
     // Smooth scrolling to anchor links on the same page
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

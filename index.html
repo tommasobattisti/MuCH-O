@@ -215,21 +215,43 @@
                 </div>
             </div>
             
-        </section id="ontology-section-main" class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] py-40 border-b-[3px] border-[#161616]">
-        <div>
-            <h2 class="m-mucho-h2 montserrat">Onotlogy and Knowledge Graph population</h2>
-        </div>
-
-        <div>
-            <h3 class="mucho-h3">Population of the mucho-gustore Knowledge Graph</h3>
-            <script src="https://gist.github.com/tommasobattisti/5da9b69ee11e252075990671667a2930.js"></script>
-            <div class="max-h-[500px] overflow-y-scroll">
-                <script src="https://gist.github.com/tommasobattisti/4a8f9086bf7cb313ad93c73f9d9c3bfc.js"></script>
+        </section>
+        <section id="ontology-section-main" class="flex flex-col space-y-20 px-[7.5%] md:px-[10%] 2xl:px-[15%] py-40 border-b-[3px] border-[#161616]">
+            <div>
+                <h2 class="m-mucho-h2 montserrat">Onotlogy and Knowledge Graph population</h2>
+                <p class="paragraph">The MuCH-ontology has been developed starting from the competency questions and considering the availability of data retrieved as explained in the previous section. The starting point is music, and songs in particular, while special attention was dedicated to the relations between entities. For these reasons, the <a href="https://github.com/polifonia-project/music-meta-ontology" target="_blank" class="in-text-a">music-meta ontology</a> and the <a href="https://www.w3.org/TR/prov-o/" target="_blank" class="in-text-a">PROV ontology</a> were selected as starting point for describing information objects and music entities, and influence relations respectively.</p>
+                <p class="paragraph">Specific classes of these ontologies were used and extended for the project's purpose. For what concerns relations, the PROV ontology allows for connecting differnt entities by means of simple object properties, but also by the so called "qualified influences". These are more complex constructs that were reused for specifi+ying additional information about the retrieved influence. Naturally, these relations have been extended to include the phenomena relevant for the project.</p>
+            </div>
+            <div class="flex-col space-y-10">
+                <div class="flex flex-row space-x-10 justify-start">
+                    <button id="viz-ontology-btn" class="ontology-btn mucho-btn-active">Visualisation</button>
+                    <button id="owl-ontology-btn" class="ontology-btn mucho-btn">OWL file</button>
+                </div>
+                <div id="ontology-viz-div" class="bb-black-border h-fit">
+                    <iframe src="https://service.tib.eu/webvowl/#url=https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/assets/json/mucho.json" title="W3Schools Free Online Web Tutorials" style="width: 100%; height: 100vh">
+                    </iframe>
+                </div>
+                <div id="ontology-owl-div" class="hidden b-black-border h-fit">
+                    <script src="https://gist.github.com/tommasobattisti/4a8f9086bf7cb313ad93c73f9d9c3bfc.js"></script>
+                </div>
             </div>
             
-        </div>
-        <iframe src="https://service.tib.eu/webvowl/#url=https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/assets/json/mucho.json" title="W3Schools Free Online Web Tutorials" style="width: 100%; height: 100vh">
-        </iframe>
+    
+            <div>
+                <h3 class="mucho-h3">Population of the mucho-gustore Knowledge Graph</h3>
+                <div class="b-black-border h-fit">
+                    <script src="https://gist.github.com/tommasobattisti/5da9b69ee11e252075990671667a2930.js"></script>
+                </div>
+                
+                
+                
+            
+                
+            </div>
+            
+
+        </section>
+        
 
         
         

@@ -20,6 +20,18 @@ body {
     transform: translate(-5px, 0px);
 }
 
+.mucho-btn-active {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+    color: #161616;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: solid 3px #161616;
+    border-radius: 2.5rem;
+    transform: translate(0px, 5px);
+}
+
 .mucho-btn:hover {
     box-shadow: 0px 0px 0px 0px;
     transform: translate(0px, 5px);
@@ -35,6 +47,11 @@ body {
 .b-black-border {
     box-shadow: 2.5px 2.5px 0px 0px #161616;
     border-radius: 10px;
+    border: solid 3px #161616;
+}
+
+.bb-black-border {
+    box-shadow: 2.5px 2.5px 0px 0px #161616;
     border: solid 3px #161616;
 
 }
