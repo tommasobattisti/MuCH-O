@@ -978,13 +978,6 @@ Differs from two or more people collaborating without forming a recognised and n
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#MusicAlbum">
         <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-meta/hasMusicEntityPart"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Song"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A Music Album is a music entity abstracting the concept of a collection of tracks (songs).</rdfs:comment>
         <rdfs:label xml:lang="en">Music Album</rdfs:label>
     </owl:Class>
