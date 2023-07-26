@@ -1,5 +1,5 @@
 # MuCH-O: Music to Cultural Heritage Ontology
-<a href="https://tommasobattisti.github.io/MuCH-O/" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=[https%3A%2F%2Ftommasobattisti.github.io%2FMuCH-O%2F](https://tommasobattisti.github.io/MuCH-O/)">
+<a href="https://tommasobattisti.github.io/MuCH-O/" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https%3A%2F%2Ftommasobattisti.github.io%2FMuCH-O%2F">
 </a>
 
 ### Unveiling connections between songs and cultural heritage entities - A semantic approach
