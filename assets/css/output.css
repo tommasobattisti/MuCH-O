@@ -566,6 +566,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -625,6 +629,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -709,6 +717,19 @@ video {
   background-color: rgb(212 212 216 / 0.6);
 }
 
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#161616\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
 .px-\[7\.5\%\] {
   padding-left: 7.5%;
   padding-right: 7.5%;
@@ -738,6 +759,22 @@ video {
 
 .pt-\[60px\] {
   padding-top: 60px;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .align-middle {
@@ -772,6 +809,15 @@ video {
 .text-\[\#0E9594\] {
   --tw-text-opacity: 1;
   color: rgb(14 149 148 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-zinc-100 {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
 .drop-shadow-md {
@@ -1124,6 +1170,10 @@ tbody tr {
 */
 
 @media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1146,10 +1196,76 @@ tbody tr {
     margin-top: 0px;
   }
 
+  .md\:w-\[4\] {
+    width: 4;
+  }
+
+  .md\:w-\[47\.5\%\] {
+    width: 47.5%;
+  }
+
+  .md\:w-\[37\.\%\] {
+    width: 37.%;
+  }
+
+  .md\:w-\[37\.5\%\] {
+    width: 37.5%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .md\:w-\[\%\] {
+    width: %;
+  }
+
+  .md\:w-\[58\.\%\] {
+    width: 58.%;
+  }
+
+  .md\:w-\[57\.5\%\] {
+    width: 57.5%;
+  }
+
+  .md\:w-\[17\.5\%\] {
+    width: 17.5%;
+  }
+
+  .md\:w-\[67\.5\%\] {
+    width: 67.5%;
+  }
+
+  .md\:w-\[77\.5\%\] {
+    width: 77.5%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:space-y-\[-10px\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(-10px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(-10px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:px-\[10\%\] {
