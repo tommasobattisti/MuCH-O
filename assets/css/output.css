@@ -562,10 +562,6 @@ video {
   margin-right: 2.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -621,10 +617,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-row {
@@ -732,6 +724,10 @@ video {
   padding-bottom: 10rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-\[3vh\] {
   padding-bottom: 3vh;
 }
@@ -771,6 +767,11 @@ video {
 
 .tracking-\[-0\.05em\] {
   letter-spacing: -0.05em;
+}
+
+.text-\[\#0E9594\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 149 148 / var(--tw-text-opacity));
 }
 
 .drop-shadow-md {
@@ -895,7 +896,30 @@ video {
   }
 }
 
+.mucho-h4 {
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .mucho-h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .mucho-h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .paragraph {
+  padding-bottom: 0.25rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -911,6 +935,26 @@ video {
   .paragraph {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+.small-paragraph {
+  padding-top: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .small-paragraph {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .small-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1088,12 +1132,6 @@ tbody tr {
     flex-direction: row;
   }
 
-  .sm\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .sm\:text-center {
     text-align: center;
   }
@@ -1112,12 +1150,6 @@ tbody tr {
     --tw-space-y-reverse: 0;
     margin-top: calc(-10px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(-10px * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:px-\[10\%\] {
@@ -1147,12 +1179,6 @@ tbody tr {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:text-3xl {

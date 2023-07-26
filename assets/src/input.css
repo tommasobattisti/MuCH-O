@@ -37,9 +37,17 @@
     @apply text-left text-[1.5rem] sm:text-[2rem] font-normal tracking-[-0.04em] pb-5;
 }
 
+.mucho-h4 {
+    @apply text-sm lg:text-base 2xl:text-lg uppercase font-semibold pb-2;
+}
+
 .paragraph {
-    @apply text-base lg:text-lg 2xl:text-xl;
-  }
+    @apply text-base lg:text-lg 2xl:text-xl pb-1;
+}
+
+.small-paragraph {
+    @apply text-xs lg:text-sm 2xl:text-base pt-5;
+}
 
 li {
     @apply font-medium pt-2 before:font-semibold before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#0E9594] before:content-['-'] before:pr-[0.8rem];

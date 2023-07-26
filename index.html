@@ -97,7 +97,9 @@
                     </div>
                     <div class="lg:w-[47.5%] black-border">
                         <ul>
-                            <li class="pt-0">Which entity/ies are referenced by the song?</li>
+                            <li class="pt-0">Who are the artists that authored the song?</li>
+                            <li>What genres are related to those artists?</li>
+                            <li>Which entity/ies are referenced by the song?</li>
                             <li>Which annotations have been identified to be referencing the above entity and what do they contain?</li>
                             <li>Which are the lyrics' fragments that have been annotated with the above annotation?</li>
                             <li>Which entities have been influenced in some way by the entity referenced by the song?</li>
@@ -266,6 +268,151 @@
                 <p class="paragraph">As for the results, we test the ontology with respect to the competency questions by translating them in SPARL queries to perform in order to retrieve information from the mucho-gustore knowledge graph.</p>
                 <p class="paragraph">A <a href="https://github.com/tommasobattisti/MuCH-O/blob/main/documentation/queries.ipynb" target="_blank" class="in-text-a">specific notebook</a> has been used for performing the queries and analysing the results. The RDFLib library alosne was enough to serve this purpose.</p>
             </div>
+
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">01. Who are the artists that authored the song?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/a90a0977d5cf528d08216952050d5e4a.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results</h4>
+                        <p class="paragraph"><span class="font-medium">Artist:</span> <a href="https://www.wikidata.org/wiki/Q22151" target="_blank" class="in-text-a">https://www.wikidata.org/wiki/Q22151</a></p>
+                        <p class="paragraph"><span class="font-medium">Label:</span>Muse</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">02. What genres are related to those artists?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/1d74cc00b7ea20831e57c7232b57a341.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results</h4>
+                        <p class="paragraph"><span class="font-medium">Artist:</span> Muse</p>
+                        <p class="paragraph"><span class="font-medium">Genre:</span> modern rock; permanent wave; rock.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">03. Which entity/ies is/are referenced by the song?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/7f6e7e3f96c996c0afc5a906bebda249.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results</h4>
+                        <p class="paragraph"><span class="font-medium">Entity:</span> <a href="https://www.wikidata.org/wiki/Q208460" target="_blank" class="in-text-a">https://www.wikidata.org/wiki/Q208460</a></p>
+                        <p class="paragraph"><span class="font-medium">Type:</span> LiteraryEntity</p>
+                        <p class="paragraph"><span class="font-medium">Title:</span> 1984</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">04. Which are the annotations that have been identified to be referencing the above entity and what do they contain?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/a3a784e7182d02114d61c25122da75ff.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results <span class="font-semibold text-[#0E9594]">*</span></h4>
+                        <p class="paragraph"><span class="font-medium">Annotation:</span> annotation_8</p>
+                        <p class="paragraph"><span class="font-medium">Text:</span> If a ceiling, roof or other structure caves in, it breaks and falls into the space below. This is just figuratively implying their worries that their hiding place may be exposed and they may get arrested for romantic love, which is a crime in the world of “1984”.</p>
+                        <p class="small-paragraph"><span class="font-semibold text-[#0E9594]">*</span> Just one result has been included in the example for space-related issues.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">05. Which are the lyrics fragments that have been annotated with the above annotation (therefore referencing in some way the involved entity)?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/5eeae5f4f8f1e9b32570ad86422d5bf8.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results <span class="font-semibold text-[#0E9594]">*</span></h4>
+                        <p class="paragraph"><span class="font-medium">Lyrics fragment:</span> fragment_8</p>
+                        <p class="paragraph"><span class="font-medium">Text:</span> Or will the walls start caving in?</p>
+                        <p class="paragraph"><span class="font-medium">Annotation:</span> annotation_8</p>
+                        <p class="small-paragraph"><span class="font-semibold text-[#0E9594]">*</span> Just one result has been included in the example for space-related issues.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">06. Which entities have been influenced in some way by the entity referenced by the song?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/8f406c745b727464b70edf95bb8c2fdf.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results <span class="font-semibold text-[#0E9594]">*</span></h4>
+                        <div class="pb-4">
+                            <p class="paragraph"><span class="font-medium">Entity:</span> <a href="http://dbpedia.org/resource/2_+_2_=_5_(song)" target="_blank" class="in-text-a">http://dbpedia.org/resource/2_+_2_=_5_(song)</a></p>
+                            <p class="paragraph"><span class="font-medium">Type:</span> Song</p>
+                            <p class="paragraph"><span class="font-medium">Label:</span> 2 + 2 = 5</p>
+                        </div>
+                        <div>
+                            <p class="paragraph"><span class="font-medium">Entity:</span> <a href="http://dbpedia.org/resource/The_Jam" target="_blank" class="in-text-a"> http://dbpedia.org/resource/The_Jam</a></p>
+                            <p class="paragraph"><span class="font-medium">Type:</span> Group</p>
+                            <p class="paragraph"><span class="font-medium">Label:</span> The Jam</p>
+                        </div>
+                        <p class="small-paragraph"><span class="font-semibold text-[#0E9594]">*</span> Only some of the results has been included in the example for space-related issues.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">07. Which Cultural heritage objects are related to the entity referenced by the song (and therefore to the song with a two step connection) and by what kind of relation?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/6c9358b553f460d0e06aee47202236a4.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results <span class="font-semibold text-[#0E9594]">*</span></h4>
+                        <div class="pb-4">
+                            <p class="paragraph"><span class="font-medium">Entity:</span> <a href="http://dbpedia.org/resource/The_God_Complex" target="_blank" class="in-text-a">http://dbpedia.org/resource/The_God_Complex</a></p>
+                            <p class="paragraph"><span class="font-medium">Type:</span> AudiovisualEntity</p>
+                            <p class="paragraph"><span class="font-medium">Label:</span> The God Complex</p>
+                            <p class="paragraph"><span class="font-medium">Relation:</span> cites</p>
+                        </div>
+                        <div>
+                            <p class="paragraph"><span class="font-medium">Entity:</span> <a href="http://dbpedia.org/resource/Diamond_Dogs" target="_blank" class="in-text-a"> http://dbpedia.org/resource/Diamond_Dogs</a></p>
+                            <p class="paragraph"><span class="font-medium">Type:</span> MusicAlbum</p>
+                            <p class="paragraph"><span class="font-medium">Label:</span> Diamond Dogs</p>
+                            <p class="paragraph"><span class="font-medium">Relation:</span> wasInfluencedBy</p>
+                        </div>
+                        <p class="small-paragraph"><span class="font-semibold text-[#0E9594]">*</span> Only some of the results has been included in the example for space-related issues.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="mucho-h3">08. From where was each of these relations extracted? What does the source text say about them?</h3>
+                <div class="flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:justify-between">
+                    <div class="lg:w-[47.5%] b-black-border h-fit">
+                        <script src="https://gist.github.com/tommasobattisti/c97f1daaffb701fa435f60e7cf44ddd0.js"></script>
+                    </div>
+                    <div class="lg:w-[47.5%]">
+                        <h4 class="mucho-h4 monteserrat">Results <span class="font-semibold text-[#0E9594]">*</span></h4>
+                        <p class="paragraph"><span class="font-medium">Entity:</span> <a href="http://dbpedia.org/resource/2_+_2_=_5_(song)" target="_blank" class="in-text-a">http://dbpedia.org/resource/2_+_2_=_5_(song)</a></p>
+                        <p class="paragraph"><span class="font-medium">Label:</span> 2 + 2 = 5 (song)</p>
+                        <p class="paragraph"><span class="font-medium">Relation type:</span> EntityInfluence</p>
+                        <p class="paragraph"><span class="font-medium">Source:</span> <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" target="_blank" class="in-text-a">https://en.wikipedia.org/wiki/Nineteen_Eighty-Four</a></p>
+                        <p class="paragraph"><span class="font-medium">Source text:</span> Radiohead's 2003 single "2 + 2 = 5", from their album Hail to the Thief, is Orwellian by title and content. Thom Yorke states, "I was listening to a lot of political programs on BBC Radio 4. I found myself writing down little nonsense phrases, those Orwellian euphemisms that [the British and American governments] are so fond of. They became the background of the record."</p>
+                        <p class="small-paragraph"><span class="font-semibold text-[#0E9594]">*</span> Just one result has been included in the example for space-related issues.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
 
         </section>
         
