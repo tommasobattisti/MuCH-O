@@ -96,73 +96,91 @@ $(document).ready(function() {
 
     // Waypoints for the project sections
     //$('#site-banner').waypoint(function() {
-    //    $('.lg-nav-link').removeClass('active-lg-nav-link');
-    //    $('.lg-nav-link').addClass('inactive-lg-nav-link');
+//
     //    $('.sm-nav-link').removeClass('active-sm-nav-link');
     //    $('.sm-nav-link').addClass('inactive-sm-nav-link');
     //}, { offset: '-50%'}
     //);
 
 
-    //$('#project-section-main').waypoint(function() {
-    //    changeActiveNavLink('project');
-    //}, { offset: '120px'}
-    //);
 
 
-    //$('#datasets-section-main').waypoint(function(direction) {
-    //    if (direction == 'down') {
-    //        changeActiveNavLink('datasets');
-    //    }
-    //}, { offset: '120px'}
-    //);
+    $('#project-section-main').waypoint(function() {
+        changeActiveNavLink('project');
+    }, { offset: '120px'}
+    );
+    $('#project-section-main').waypoint(function(direction) {
+        if (direction == 'up') {
+            changeActiveNavLink('none');
+        }
+    }, { offset: '70%'}
+    );
 
-    //$('#datasets-section-main').waypoint(function(direction) {
-    //    if (direction == 'up') {
-    //        changeActiveNavLink('project');
-    //    }
-    //}, { offset: '100%'}
-    //);
+
+    $('#ke-section-main').waypoint(function(direction) {
+        if (direction == 'down') {
+            changeActiveNavLink('ke');
+        }
+    }, { offset: '120px'}
+    );
+
+    $('#ke-section-main').waypoint(function(direction) {
+        if (direction == 'up') {
+            changeActiveNavLink('project');
+        }
+    }, { offset: '100%'}
+    );
     
-    //$('#visualisations-section-main').waypoint(function(direction) {
-    //    if (direction == 'down') {
-    //        changeActiveNavLink('visualisations');
-    //    }
-    //}, { offset: '120px'}
-    //);
-    //$('#visualisations-section-main').waypoint(function(direction) {
-    //    if (direction == 'up') {
-    //        changeActiveNavLink('datasets');
-    //    }
-    //}, { offset: '100%'}
-    //);
+    $('#ontology-section-main').waypoint(function(direction) {
+        if (direction == 'down') {
+            changeActiveNavLink('ontology');
+        }
+    }, { offset: '120px'}
+    );
+    $('#ontology-section-main').waypoint(function(direction) {
+        if (direction == 'up') {
+            changeActiveNavLink('ke');
+        }
+    }, { offset: '100%'}
+    );
 
-    //$('#license-metadata-section-main').waypoint(function(direction) {
-    //    if (direction == 'down') {
-    //        changeActiveNavLink('license-metadata');
-    //    }        
-    //}, { offset: '120px'}
-    //);
-    //$('#license-metadata-section-main').waypoint(function(direction) {
-    //    if (direction == 'up') {
-    //        changeActiveNavLink('visualisations');
-    //    }
-    //}, { offset: '100%'}
-    //);
+    $('#results-section-main').waypoint(function(direction) {
+        if (direction == 'down') {
+            changeActiveNavLink('results');
+        }        
+    }, { offset: '120px'}
+    );
+    $('#results-section-main').waypoint(function(direction) {
+        if (direction == 'up') {
+            changeActiveNavLink('ontology');
+        }
+    }, { offset: '100%'}
+    );
 
 
-    //$('#about-section-main').waypoint(function(direction) {
-    //    if (direction == 'down') {
-    //        changeActiveNavLink('about');
-    //    }
-    //}, { offset: '120px'}
-    //);
-    //$('#about-section-main').waypoint(function(direction) {
-    //    if (direction == 'up') {
-    //        changeActiveNavLink('license-metadata');
-    //    }
-    //}, { offset: '100%'}
-    //);
+    $('#about-section-main').waypoint(function(direction) {
+        if (direction == 'down') {
+            changeActiveNavLink('about');
+        }
+    }, { offset: '120px'}
+    );
+    $('#about-section-main').waypoint(function(direction) {
+        if (direction == 'up') {
+            changeActiveNavLink('results');
+        }
+    }, { offset: '100%'}
+    );
+
+    
 
 
 });
+
+function changeActiveNavLink(navLink) {
+    $('.sm-nav-link').removeClass('active-sm-nav-link');
+    $('.sm-nav-link').addClass('inactive-sm-nav-link');
+    if (navLink != 'none') {
+        $('#' + navLink + '-sm-nav-link').removeClass('inactive-sm-nav-link');
+        $('#' + navLink + '-sm-nav-link').addClass('active-sm-nav-link');
+    };
+}
