@@ -753,6 +753,10 @@ video {
   padding-top: 60px;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .align-middle {
   vertical-align: middle;
 }

@@ -162,7 +162,7 @@ $(document).ready(function() {
         if (direction == 'down') {
             changeActiveNavLink('about');
         }
-    }, { offset: '120px'}
+    }, { offset: '200px'}
     );
     $('#about-section-main').waypoint(function(direction) {
         if (direction == 'up') {
