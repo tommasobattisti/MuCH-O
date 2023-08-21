@@ -299,6 +299,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This property denotes that an entity contains subtle or indirect references, hints, or suggestions that relate to another entity. The alluding entity may not explicitly mention the referenced entity, but it evokes some kind of associations, themes, or concepts that are more or less recognizable to those of the alluded entity.</rdfs:comment>
         <rdfs:label xml:lang="en">alludesTo</rdfs:label>
         <prov:category xml:lang="en">expanded</prov:category>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Allusion"/>
@@ -313,6 +314,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This property represents the explicit link between a citing entity and a cited entity made by means of content. In particular, a citation should be intended as an undeniable reference made by a citing entity to a cited entity by reusing a part of the cited entity’s content.</rdfs:comment>
         <rdfs:label xml:lang="en">cites</rdfs:label>
         <prov:category xml:lang="en">expanded</prov:category>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Citation"/>
@@ -366,6 +368,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This property relates two entities where one is an adaptation of the other. An adaptation involves transforming or modifying an existing entity to create a new entity that retains significant aspects of the original while introducing variations to suit a different context or medium.</rdfs:comment>
         <rdfs:label xml:lang="en">isAdaptationOf</rdfs:label>
         <prov:category xml:lang="en">expanded</prov:category>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Adaptation"/>
@@ -401,6 +404,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This property establishes a relationship between two entities, where one entity serves as the foundational source or basis for the creation of the other entity. The entity that is &quot;based on&quot; inherits essential elements, concepts, or principles from the source entity, which are expanded, developed, or reinterpreted in the newly created entity.</rdfs:comment>
         <rdfs:label xml:lang="en">isBasedOn</rdfs:label>
         <prov:category xml:lang="en">expanded</prov:category>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Basis"/>
@@ -415,6 +419,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#references"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
+        <rdfs:comment xml:lang="en">This property indicates that one entity makes a direct or explicit mention of another entity within its content. The mentioning entity commonly mentions a mentioned entity by citing its name or title within its content.</rdfs:comment>
         <rdfs:label xml:lang="en">mentions</rdfs:label>
         <prov:category xml:lang="en">expanded</prov:category>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Mention"/>
@@ -549,7 +554,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/InformationObject"/>
         <rdfs:label xml:lang="en">wasinspiredBy</rdfs:label>
-        <prov:definition xml:lang="en">An inspiration is the process of being stimulated by some existent entity to do, produce, or create some new entity. It consists getting from something  a new or creative idea that can be applied in the creation of something new.</prov:definition>
+        <prov:definition xml:lang="en">This property is used for establishing a relation between an inspiring and an inspired entity where an inspiration is the process of being stimulated by some existent entity to do, produce, or create some new entity. It consists of getting from something a new idea that can be applied in the creation of something else.</prov:definition>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration"/>
         <prov:qualifiedForm rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#qualifiedInspiration"/>
     </owl:ObjectProperty>
