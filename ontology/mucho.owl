@@ -347,15 +347,13 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasinformationSource -->
+    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasInformationSource -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasinformationSource">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#hasInformationSource">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Influence"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Annotation"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Text"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-meta/TextFragment"/>
-        <rdfs:comment xml:lang="en">It specifies the relation between a qualified influence and the text, text fragment or annotation containing the information used to determine the influence.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasinformationSource</rdfs:label>
     </owl:ObjectProperty>
     
 
