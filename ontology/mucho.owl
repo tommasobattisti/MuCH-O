@@ -921,30 +921,6 @@ For example, it can be used for specifying the relation expressing the fact that
     
 
 
-    <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/hasMember"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/polifonia/ontology/core/Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/name"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A named group or collective formed by two or more people that act collaboratively towards the achievement of a particular goal (e.g., an art collective aiming at producing art pieces, a band aiming at publishing albums and performing live, etc.).
-Differs from two or more people collaborating without forming a recognised and named group that can identify them as a collective.</rdfs:comment>
-        <rdfs:label xml:lang="en">Group</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Inspiration">
@@ -1102,7 +1078,6 @@ Differs from the common definition of visual arts since it does not include audi
     <!-- https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble -->
 
     <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-meta/MusicEnsenble">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/tommasobattisti/MuCH-O/main/ontology/mucho.owl#Group"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-meta/MusicArtist"/>
         <rdfs:comment xml:lang="en">A group or collective of musicians who perform together as an ensemble. It encompasses various types of musical groups, such as orchestras, bands, choirs, chamber ensembles, and jazz ensembles.</rdfs:comment>
         <rdfs:label xml:lang="en">Music Ensenble</rdfs:label>
